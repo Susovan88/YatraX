@@ -1,6 +1,6 @@
 import express from 'express';
 import { body, validationResult } from 'express-validator';
-import { getProfile, loginUser, registerUser } from '../controllers/userController.js';
+import { getProfile, loginUser, logOut, registerUser } from '../controllers/userController.js';
 import { authUser } from '../middlewares/authUser.js';
 
 const userRouter = express.Router();
@@ -36,6 +36,8 @@ userRouter.post("/login",[
 
 
 userRouter.get("/profile",authUser,getProfile);
+
+userRouter.delete("/logout",logOut);
 
 export default userRouter;
 

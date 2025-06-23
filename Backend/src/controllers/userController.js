@@ -2,6 +2,7 @@ import { body, validationResult } from 'express-validator';
 import User from '../models/userModel.js';
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
+import BacklistToken from "../models/backListTokenModel.js"
 
 
 export const registerUser = async (req, res) => {
@@ -120,6 +121,22 @@ export const getProfile = async (req, res) => {
 
   } catch (error) {
     console.error("Get profile error:", error);
+    res.status(500).json({ message: "Internal server error" });
+  }
+}
+
+export const logOut=async (req, res) => {
+  try {
+        
+    BacklistToken.create({
+      token: req.cookies.authToken, // Store the token in blacklist
+      createdAt: new Date()
+    });
+    res.clearCookie('authToken'); // Clear the auth token cookie
+
+    res.status(200).json({ message: "Logged out successfully" });
+  } catch (error) {
+    console.error("Logout error:", error);
     res.status(500).json({ message: "Internal server error" });
   }
 }
