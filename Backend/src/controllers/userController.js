@@ -4,7 +4,7 @@ import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 
 
-export const registerUser = async (req, res, next) => {
+export const registerUser = async (req, res) => {
   // Check validation errors from express-validator
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
@@ -50,8 +50,50 @@ export const registerUser = async (req, res, next) => {
     });
 
   } catch (error) {
-    next(error); // Pass errors to global error handler
+    console.error("Registration error:", error);
+    res.status(500).json({ message: "Internal server error" });
   }
 };
 
+export const loginUser = async (req, res) => {
+  // Check validation errors from express-validator
+  const errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    return res.status(400).json({ errors: errors.array() });
+  }
 
+  try {
+    const { email, password } = req.body;
+
+    // Find user by email
+    const user = await User.findOne({ email }).select('+password'); // Include password field for comparison
+    if (!user) {
+      return res.status(401).json({ message: "Invalid email or password" });
+    }
+
+    // Compare passwords
+    const isMatch = await bcrypt.compare(password, user.password);
+    if (!isMatch) {
+      return res.status(401).json({ message: "Invalid email or password" });
+    }
+
+    // Generate JWT Token
+    const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET, {
+      expiresIn: "7d",
+    });
+
+    res.status(200).json({
+      message: 'Login successful',
+      user: {
+        _id: user._id,
+        fullname: user.fullname,
+        email: user.email,
+      },
+      token
+    });
+
+  } catch (error) {
+    console.error("Login error:", error);
+    res.status(500).json({ message: "Internal server error" });
+  }
+}   

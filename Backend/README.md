@@ -119,6 +119,75 @@ curl -X POST http://localhost:3000/api/users/register \
 
 ---
 
+
+### `POST /api/users/login`
+
+Authenticate a user and return a token.
+
+#### Request Body
+
+```json
+{
+  "email": "john.doe@example.com",
+  "password": "yourpassword"
+}
+```
+
+#### Field Requirements
+
+- `email` (string, required, must be a valid email)
+- `password` (string, required, min 8 chars)
+
+#### Example Request
+
+```bash
+curl -X POST http://localhost:3000/api/users/login \
+  -H "Content-Type: application/json" \
+  -d '{
+    "email": "alice.smith@example.com",
+    "password": "supersecretpassword"
+  }'
+```
+
+#### Success Response
+
+- **Status:** `200 OK`
+- **Body:**
+  ```json
+  {
+    "message": "Login successful",
+    "user": {
+      "_id": "user_id_here",
+      "fullname": {
+        "firstname": "Alice",
+        "lastname": "Smith"
+      },
+      "email": "alice.smith@example.com"
+    },
+    "token": "jwt_token_here"
+  }
+  ```
+
+#### Error Responses
+
+- **Status:** `400 Bad Request`
+  - Validation errors (missing fields, invalid email, short password, etc.)
+  - Invalid credentials
+
+  ```json
+  {
+    "errors": [
+      { "msg": "Email is required", "param": "email", ... }
+    ]
+  }
+  ```
+  or
+  ```json
+  {
+    "message": "Invalid email or password"
+  }
+
+
 ## Contributing
 
 Feel free to submit issues or pull requests for improvements or bug fixes. 
