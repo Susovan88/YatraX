@@ -7,17 +7,20 @@ This project is a simple Express server that demonstrates the structure of a bac
 ```
 Backend
 ├── src
-│   ├── app.js             # Entry point of the application
+│   ├── app.js                # Entry point of the application
 │   ├── controllers
-│   │   └── userController.js
+│   │   └── userController.js # User controller logic
 │   ├── models
-│   │   └── userModel.js
+│   │   └── userModel.js      # User mongoose schema/model
 │   ├── Routers
-│   │   └── userRoutes.js
+│   │   └── userRoutes.js     # User-related routes
+│   ├── middlewares
+│   │   └── authUser.js       # Authentication middleware
 │   ├── config
-│   │   └── mongoDB.js
-├── package.json           # NPM configuration file
-└── README.md              # Project documentation
+│   │   └── mongoDB.js        # MongoDB connection logic
+├── package.json              # NPM configuration file
+├── .gitignore                # Git ignore file
+└── README.md                 # Project documentation
 ```
 
 ## Installation
@@ -186,6 +189,83 @@ curl -X POST http://localhost:3000/api/users/login \
   {
     "message": "Invalid email or password"
   }
+
+
+
+### `GET /api/users/profile`
+
+Get the profile of the currently logged-in user.  
+**This endpoint requires authentication using a JWT token.**
+
+#### Authentication
+
+- Send the JWT token in the `Authorization` header as a Bearer token:
+  ```
+  Authorization: Bearer <your_jwt_token>
+  ```
+- Or, if you are using cookies, the token will be read from the `authToken` cookie.
+
+#### Example Request
+
+```bash
+curl -X GET http://localhost:3000/api/users/profile \
+  -H "Authorization: Bearer <your_jwt_token>"
+```
+
+#### Success Response
+
+- **Status:** `200 OK`
+- **Body:**
+  ```json
+  {
+    "_id": "user_id_here",
+    "fullname": {
+      "firstname": "Alice",
+      "lastname": "Smith"
+    },
+    "email": "alice.smith@example.com",
+    "createdAt": "2024-06-23T12:34:56.789Z",
+    "updatedAt": "2024-06-23T12:34:56.789Z"
+  }
+  ```
+
+#### Error Responses
+
+- **Status:** `401 Unauthorized`
+  ```json
+  { "message": "No token, authorization denied" }
+  ```
+  or
+  ```json
+  { "message": "Token is not valid" }
+  ```
+
+- **Status:** `404 Not Found`
+  ```json
+  { "message": "User not found" }
+  ```
+
+---
+
+## Authentication Middleware
+
+This project uses an authentication middleware (`authUser`) to protect routes that require the user to be logged in.
+
+**How it works:**
+- Checks for a JWT token in the `Authorization` header (`Bearer <token>`) or in the `authToken` cookie.
+- Verifies the token using your secret key.
+- If valid, attaches the user info to `req.user` and allows access to the route.
+- If invalid or missing, returns a `401 Unauthorized` error.
+
+**Usage Example:**
+
+```javascript
+import { authUser } from './middlewares/authUser.js';
+
+app.get('/api/users/profile', authUser, getProfile);
+```
+
+You can use this middleware to protect any route that should only be accessible to authenticated users.
 
 
 ## Contributing

@@ -1,6 +1,7 @@
 import express from 'express';
 import { body, validationResult } from 'express-validator';
-import { loginUser, registerUser } from '../controllers/userController.js';
+import { getProfile, loginUser, registerUser } from '../controllers/userController.js';
+import { authUser } from '../middlewares/authUser.js';
 
 const userRouter = express.Router();
 
@@ -33,6 +34,8 @@ userRouter.post("/login",[
     .isLength({ min: 8 }).withMessage('Password must be at least 8 characters long'),
 ],loginUser);
 
+
+userRouter.get("/profile",authUser,getProfile);
 
 export default userRouter;
 

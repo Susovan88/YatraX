@@ -3,17 +3,25 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import main from './config/mongoDB.js';
 import userRouter from './Routers/userRoutes.js';
+import cookieParser from 'cookie-parser';
 dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Middleware
-app.use(cors());
+// Middlewares...
+app.use(cors({
+    origin:'*',
+    credentials: true,
+    allowedHeaders: ['Content-Type', 'authorization'],
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS']
+}));
+app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-main().then(()=>{  // connect mongodb
+
+main().then(()=>{  // connect mongodb...
     console.log("-> -> mongodb is connected with server!!!")
 }).catch(err=> console.log("err: ",err));
 

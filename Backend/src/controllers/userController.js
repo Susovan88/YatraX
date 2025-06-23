@@ -39,6 +39,8 @@ export const registerUser = async (req, res) => {
       expiresIn: "7d",
     });
 
+    res.cookie('authToken', token);
+
     res.status(201).json({
       message: 'User registered successfully',
       user: {
@@ -82,6 +84,8 @@ export const loginUser = async (req, res) => {
       expiresIn: "7d",
     });
 
+    res.cookie('authToken', token);
+
     res.status(200).json({
       message: 'Login successful',
       user: {
@@ -97,3 +101,25 @@ export const loginUser = async (req, res) => {
     res.status(500).json({ message: "Internal server error" });
   }
 }   
+
+
+export const getProfile = async (req, res) => {
+  try {
+    const user = req.user; // User is set by authUser middleware
+    if (!user) {
+      return res.status(404).json({ message: "User not found" });
+    }
+
+    res.status(200).json({
+      _id: user._id,
+      fullname: user.fullname,
+      email: user.email,
+      createdAt: user.createdAt,
+      updatedAt: user.updatedAt,
+    });
+
+  } catch (error) {
+    console.error("Get profile error:", error);
+    res.status(500).json({ message: "Internal server error" });
+  }
+}
