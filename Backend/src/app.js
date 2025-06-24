@@ -3,6 +3,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import main from './config/mongoDB.js';
 import userRouter from './Routers/userRoutes.js';
+import captainRouter from './Routers/captainRoutes.js';
 import cookieParser from 'cookie-parser';
 dotenv.config();
 
@@ -27,7 +28,10 @@ main().then(()=>{  // connect mongodb...
 
 
 // Routes
-app.use('/api/users', userRouter);
+app.use('/api/users', userRouter); // for users...
+app.use('/api/captains', captainRouter); // for captains...
+
+
 
 app.listen(PORT, () => {
     console.log(` --> Server is running on http://localhost:${PORT}`);

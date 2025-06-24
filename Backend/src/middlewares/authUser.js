@@ -23,7 +23,6 @@ export const authUser = async (req, res, next) => {
   console.log("Token from request:", token);
 
   const isBackList=await BacklistToken.findOne({token});
-  console.log("isBackList: ",isBackList);
   if(isBackList){
     return res.status(401).json({ message: "Token is blacklisted." });
   }
@@ -37,3 +36,4 @@ export const authUser = async (req, res, next) => {
     return res.status(401).json({ message: "Token is not valid" });
   }
 };
+
