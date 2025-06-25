@@ -1,0 +1,327 @@
+.profile-page {
+  width: 402px;
+  height: 857px;
+  border-radius: 40px;
+  overflow: hidden;
+  background: #FFFFFF;
+}
+.profile-page .background-color-splash {
+  position: absolute;
+  top: -266px;
+  left: -8px;
+  width: 609px;
+  height: 602px;
+  background: radial-gradient(circle at 50% 50%, #c0ec4e 0%, rgba(216, 216, 216, 0) 100%);
+}
+.profile-page .nav-bar {
+  position: absolute;
+  left: calc(100% - 402px + 69px);
+  bottom: 17px;
+  width: 265px;
+  height: 48px;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  column-gap: 24px;
+  row-gap: 0px;
+  padding: 6px 6px 6px 14px;
+  background: #030318;
+}
+.profile-page .nav-bar .home-icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.profile-page .nav-bar .ticket-icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.profile-page .nav-bar .journey {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.profile-page .nav-bar .profile-exp {
+  flex-shrink: 0;
+  width: 101px;
+  height: 36px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 4px;
+  row-gap: 0px;
+  padding: 6px 14px 6px 14px;
+  background: #D8D8D8;
+}
+.profile-page .nav-bar .profile-exp .profile {
+  flex-shrink: 0;
+  width: 45px;
+  height: 20px;
+  white-space: nowrap;
+  color: #030318;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+}
+.profile-page .nav-bar .profile-exp .user-line {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.profile-page .user-name--img {
+  position: absolute;
+  top: 65px;
+  left: 37px;
+  width: 329px;
+  height: 76px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  column-gap: 88px;
+  row-gap: 0px;
+}
+.profile-page .user-name--img .hi-subhadip {
+  flex-shrink: 0;
+  width: 164px;
+  height: 25px;
+  white-space: nowrap;
+  color: #4C4C57;
+  font-family: "Days One";
+  font-size: 24px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.profile-page .user-name--img .hi-subhadip > div {
+  width: 100%;
+}
+.profile-page .user-name--img .hi-subhadip > div span:nth-child(2) {
+  line-height: 25px;
+}
+.profile-page .user-name--img .profile-photo {
+  flex-shrink: 0;
+  width: 77px;
+  height: 76px;
+  border-radius: 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-sizing: content-box;
+  border: 3px solid #6A54EE;
+}
+.profile-page .user-name--img .profile-photo .image {
+  flex-shrink: 0;
+  width: 77px;
+  height: 76px;
+  object-fit: cover;
+}
+.profile-page .settings-list {
+  position: absolute;
+  top: 175px;
+  left: 20px;
+  width: 363px;
+  height: 522px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 12px;
+  column-gap: 12px;
+  padding: 24px 24px 0px 24px;
+  overflow: hidden;
+  background: #FFFFFF;
+  border: 1px solid #D9D9DE;
+}
+.profile-page .settings-list .general {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 315px;
+  height: 24px;
+  color: #292929;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.profile-page .settings-list .personal-information-list {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 315px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.profile-page .settings-list .personal-information-list .list {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 315px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  column-gap: 24px;
+  row-gap: 0px;
+  padding: 20px 0px 20px 0px;
+  border-width: 0px 0px 1px 0px;
+  border-style: solid;
+  border-color: #D9D9DE;
+}
+.profile-page .settings-list .personal-information-list .list .icon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+.profile-page .settings-list .personal-information-list .list .alice-williams {
+  flex-grow: 1;
+  width: 271px;
+  height: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #292929;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+}
+.profile-page .settings-list .personal-information-list .list-1 {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 315px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  column-gap: 24px;
+  row-gap: 0px;
+  padding: 20px 0px 20px 0px;
+  border-width: 0px 0px 1px 0px;
+  border-style: solid;
+  border-color: #D9D9DE;
+}
+.profile-page .settings-list .personal-information-list .list-1 .icon-1 {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+.profile-page .settings-list .personal-information-list .list-1 .alicewilliamsexamplecom {
+  flex-grow: 1;
+  width: 271px;
+  height: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #292929;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+}
+.profile-page .settings-list .personal-information-list .list-2 {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 315px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  column-gap: 24px;
+  row-gap: 0px;
+  padding: 20px 0px 20px 0px;
+  border-width: 0px 0px 1px 0px;
+  border-style: solid;
+  border-color: #D9D9DE;
+}
+.profile-page .settings-list .personal-information-list .list-2 .icon-2 {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+}
+.profile-page .settings-list .personal-information-list .list-2 .icon-2 .rectangle {
+  position: absolute;
+  top: 8.35%;
+  left: 22.95%;
+  right: 22.9%;
+  bottom: 8.3%;
+  width: calc(100% - 22.95% - 22.9%);
+  height: calc(100% - 8.35% - 8.3%);
+  border-radius: 3px;
+  border: 1px solid #292929;
+}
+.profile-page .settings-list .personal-information-list .list-2 .icon-2 .path-9 {
+  position: absolute;
+  top: 15%;
+  left: 40%;
+  right: 40%;
+  bottom: 75%;
+  width: calc(100% - 45.8% - 45.85%);
+  height: calc(100% - 20.85% - 79.15%);
+}
+.profile-page .settings-list .personal-information-list .list-2 .icon-2 .path-10 {
+  position: absolute;
+  top: 75%;
+  left: 35%;
+  right: 35%;
+  bottom: 15%;
+  width: calc(100% - 41.7% - 41.65%);
+  height: calc(100% - 79.15% - 20.85%);
+}
+.profile-page .settings-list .personal-information-list .list-2 .text-1-555-123-4567 {
+  flex-grow: 1;
+  width: 271px;
+  height: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #292929;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+}
+.profile-page .settings-list .personal-information-list .list-3 {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 315px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  column-gap: 24px;
+  row-gap: 0px;
+  padding: 20px 0px 20px 0px;
+}
+.profile-page .settings-list .personal-information-list .list-3 .icon-3 {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+.profile-page .settings-list .personal-information-list .list-3 .feedback {
+  flex-grow: 1;
+  width: 271px;
+  height: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #292929;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+}

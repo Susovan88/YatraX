@@ -1,0 +1,1642 @@
+.search-results-page {
+  width: 404px;
+  height: 857px;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  overflow: hidden;
+  background: #FFFFFF;
+}
+.search-results-page .map {
+  flex-shrink: 0;
+  width: 404px;
+  height: 539px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  row-gap: 16px;
+  column-gap: 16px;
+  padding: 16px 16px 60px 16px;
+}
+.search-results-page .map .replace-map-here {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  bottom: -5.94%;
+  width: 404px;
+  height: 571px;
+}
+.search-results-page .map .location {
+  position: absolute;
+  top: calc(100% - 539px + 292px);
+  left: calc(100% - 404px + 329px);
+  width: 28px;
+  height: 53px;
+}
+.search-results-page .map .route-item {
+  position: absolute;
+  top: calc(100% - 539px + 207px);
+  left: calc(100% - 404px + 325.5px);
+  width: 246px;
+  height: 130px;
+  transform-origin: 0 0;
+  transform: rotate(180deg) scaleY(-1);
+}
+.search-results-page .map .route-item .route {
+  position: absolute;
+  top: calc(100% - 130px + 32px);
+  left: calc(100% - 246px + 226.5px);
+  width: 210.01px;
+  height: 89.67px;
+  transform-origin: 0 0;
+  transform: rotate(180deg) scaleY(-1);
+}
+.search-results-page .map .route-item .start {
+  position: absolute;
+  top: 90px;
+  left: 0px;
+  width: 148px;
+  height: 76px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  row-gap: 4px;
+  column-gap: 4px;
+}
+.search-results-page .map .route-item .start .start-point {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  transform-origin: 0 0;
+  transform: rotate(180deg) scaleY(-1);
+}
+.search-results-page .map .route-item .start .starting-description {
+  flex-shrink: 0;
+  width: 148px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 4px;
+  row-gap: 0px;
+  padding: 6px;
+  overflow: hidden;
+  background: #FFFFFF;
+}
+.search-results-page .map .route-item .start .starting-description .pencil-line {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  transform-origin: 0 0;
+  transform: rotate(180deg) scaleY(-1);
+}
+.search-results-page .map .route-item .start .starting-description .garia-station-r {
+  flex-shrink: 0;
+  width: 108px;
+  height: 15px;
+  transform-origin: 0 0;
+  transform: rotate(180deg) scaleY(-1);
+  white-space: nowrap;
+  color: #2C2C2C;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 15px;
+  font-weight: 400;
+  text-align: right;
+}
+.search-results-page .map .route-item .end {
+  position: absolute;
+  top: -40px;
+  left: 90.5px;
+  width: 153px;
+  height: 76px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+  row-gap: 4px;
+  column-gap: 4px;
+}
+.search-results-page .map .route-item .end .ending-description {
+  flex-shrink: 0;
+  width: 153px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 4px;
+  row-gap: 0px;
+  padding: 6px;
+  overflow: hidden;
+  background: #FFFFFF;
+}
+.search-results-page .map .route-item .end .ending-description .pencil-line-1 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  transform-origin: 0 0;
+  transform: rotate(180deg) scaleY(-1);
+}
+.search-results-page .map .route-item .end .ending-description .howrah-station {
+  flex-shrink: 0;
+  width: 113px;
+  height: 15px;
+  transform-origin: 0 0;
+  transform: rotate(180deg) scaleY(-1);
+  white-space: nowrap;
+  color: #2C2C2C;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 15px;
+  font-weight: 400;
+  text-align: right;
+}
+.search-results-page .map .route-item .end .end-point {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  transform-origin: 0 0;
+  transform: rotate(180deg) scaleY(-1);
+}
+.search-results-page .bottom-content {
+  position: absolute;
+  left: calc(100% - 404px + 0px);
+  bottom: 0px;
+  width: 404px;
+  height: 435px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  row-gap: 16px;
+  column-gap: 16px;
+}
+.search-results-page .bottom-content .button-container {
+  flex-shrink: 0;
+  width: 328px;
+  height: 42px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  column-gap: 20px;
+  row-gap: 0px;
+}
+.search-results-page .bottom-content .button-container .back-button {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+}
+.search-results-page .bottom-content .button-container .book-button {
+  flex-shrink: 0;
+  width: 278px;
+  height: 42px;
+  border-radius: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 12px 86px 12px 86px;
+  background: #030318;
+}
+.search-results-page .bottom-content .button-container .book-button .book-ticket {
+  flex-shrink: 0;
+  width: 106px;
+  height: 18px;
+  color: #CAC4D0;
+  font-family: "Open Sans";
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+.search-results-page .bottom-content .ticket-select-section {
+  flex-shrink: 0;
+  width: 402px;
+  height: 377px;
+  box-shadow: 0px 3px 30px 7px rgba(0, 0, 0, 0.3);
+  border-radius: 40px 40px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  row-gap: 20px;
+  column-gap: 20px;
+  padding: 7px 20px 7px 20px;
+  overflow: hidden;
+  background: linear-gradient(to bottom right, #907eff 0%, #d4d0f3 0%, #d1caff 0%, #d9d9de 100%, #d9d9de 100%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #907eff 0%, #d4d0f3 0%, #d1caff 0%, #d9d9de 100%, #d9d9de 100%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #907eff 0%, #d4d0f3 0%, #d1caff 0%, #d9d9de 100%, #d9d9de 100%) top left / 50% 50% no-repeat, linear-gradient(to top right, #907eff 0%, #d4d0f3 0%, #d1caff 0%, #d9d9de 100%, #d9d9de 100%) top right / 50% 50% no-repeat;
+  border-width: 1px 0px 0px 0px;
+  border-style: solid;
+  border-color: #907EFF;
+}
+.search-results-page .bottom-content .ticket-select-section .dragbar {
+  flex-shrink: 0;
+  width: 64px;
+  height: 4px;
+  border-radius: 20px;
+  background: #737373;
+}
+.search-results-page .bottom-content .ticket-select-section .bus-taxi-selector {
+  flex-shrink: 0;
+  width: 335px;
+  height: 43px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  column-gap: 4px;
+  row-gap: 0px;
+  padding: 4px;
+  background: #FFFFFF;
+}
+.search-results-page .bottom-content .ticket-select-section .bus-taxi-selector .bus-selector {
+  flex-shrink: 0;
+  width: 160px;
+  height: 35px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 10px 61px 10px 61px;
+  background: #907EFF;
+}
+.search-results-page .bottom-content .ticket-select-section .bus-taxi-selector .bus-selector .bus {
+  flex-shrink: 0;
+  width: 38px;
+  height: 15px;
+  white-space: nowrap;
+  color: #C0EC4E;
+  font-family: "Days One";
+  font-size: 18px;
+  line-height: 15px;
+  font-weight: 400;
+  text-align: center;
+}
+.search-results-page .bottom-content .ticket-select-section .bus-taxi-selector .taxi-selector {
+  flex-shrink: 0;
+  width: 163px;
+  height: 35px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 10px 61px 10px 61px;
+  background: #D8D8D8;
+}
+.search-results-page .bottom-content .ticket-select-section .bus-taxi-selector .taxi-selector .taxi {
+  flex-shrink: 0;
+  width: 41px;
+  height: 15px;
+  white-space: nowrap;
+  color: #907EFF;
+  font-family: "Days One";
+  font-size: 18px;
+  line-height: 15px;
+  font-weight: 400;
+  text-align: center;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container {
+  flex-shrink: 0;
+  width: 361px;
+  height: 645px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card {
+  flex-shrink: 0;
+  width: 361px;
+  height: 121px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 10px;
+  column-gap: 10px;
+  padding: 15px 13px 15px 13px;
+  background: #FFFFFF;
+  border: 1.2px solid #6A54EE;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card .bus-info-and-fare {
+  flex-shrink: 0;
+  width: 334px;
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  column-gap: 187px;
+  row-gap: 0px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card .bus-info-and-fare .bus-info {
+  flex-shrink: 0;
+  width: 107px;
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  row-gap: 0px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card .bus-info-and-fare .bus-info > *:not(:first-child) {
+  margin-left: -32px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card .bus-info-and-fare .bus-info .bus-name {
+  flex-shrink: 0;
+  width: 95px;
+  height: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 1px;
+  column-gap: 1px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card .bus-info-and-fare .bus-info .bus-name .rt-s-112 {
+  flex-shrink: 0;
+  width: 59px;
+  height: 15px;
+  white-space: nowrap;
+  color: #9E9E9E;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 15px;
+  font-weight: 700;
+  text-align: center;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card .bus-info-and-fare .bus-info .bus-name .naktala-howrah {
+  flex-shrink: 0;
+  width: 95px;
+  height: 16px;
+  white-space: nowrap;
+  color: #91929F;
+  font-family: "Open Sans";
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card .bus-info-and-fare .bus-info .quick-tag {
+  flex-shrink: 0;
+  width: 44px;
+  height: 17px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 0px 5px 0px 5px;
+  background: rgba(255, 255, 255, 0);
+  border: 0.5px solid #907EFF;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card .bus-info-and-fare .bus-info .quick-tag .quickest {
+  flex-shrink: 0;
+  width: 34px;
+  height: 17px;
+  white-space: nowrap;
+  color: #907EFF;
+  font-family: "Open Sans";
+  font-size: 8px;
+  line-height: 17px;
+  font-weight: 600;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card .bus-info-and-fare .fare {
+  flex-shrink: 0;
+  width: 40px;
+  height: 15px;
+  white-space: nowrap;
+  color: #2C2C2C;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 15px;
+  font-weight: 700;
+  text-align: center;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card .time {
+  flex-shrink: 0;
+  width: 335px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  row-gap: 0px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card .time .departure-information {
+  flex-shrink: 0;
+  width: 69px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card .time .departure-information .text-0800am {
+  flex-shrink: 0;
+  width: 69px;
+  height: 24px;
+  white-space: nowrap;
+  color: #907EFF;
+  font-family: "D-DIN";
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card .time .departure-information .text-0800am > div {
+  width: 100%;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card .time .departure-information .text-0800am > div span:nth-child(2) {
+  font-size: 14px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card .time .time-gap {
+  flex-shrink: 0;
+  width: 161px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 0px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card .time .time-gap .line-54 {
+  flex-shrink: 0;
+  width: 52px;
+  height: 7px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card .time .time-gap .frame-43 {
+  flex-shrink: 0;
+  width: 57px;
+  height: 24px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  padding: 8px 2px 8px 2px;
+  background: rgba(255, 255, 255, 0);
+  border: 1px solid #907EFF;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card .time .time-gap .frame-43 .text-1h-40m {
+  flex-shrink: 0;
+  width: 53px;
+  height: 8px;
+  color: #907EFF;
+  font-family: "Open Sans";
+  font-size: 10px;
+  line-height: 8px;
+  font-weight: 400;
+  text-align: center;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card .time .time-gap .line-55 {
+  flex-shrink: 0;
+  width: 52px;
+  height: 7px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card .time .landing-information {
+  flex-shrink: 0;
+  width: 69px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card .time .landing-information .text-0940am {
+  flex-shrink: 0;
+  width: 69px;
+  height: 24px;
+  white-space: nowrap;
+  color: #907EFF;
+  font-family: "D-DIN";
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: right;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card .time .landing-information .text-0940am > div {
+  width: 100%;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card .time .landing-information .text-0940am > div span:nth-child(2) {
+  font-size: 14px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card .ride-information {
+  flex-shrink: 0;
+  width: 294px;
+  height: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  column-gap: 6px;
+  row-gap: 0px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card .ride-information .wb-05-2922 {
+  flex-shrink: 0;
+  width: 56px;
+  height: 16px;
+  white-space: nowrap;
+  color: #91929F;
+  font-family: "Open Sans";
+  font-size: 10px;
+  line-height: 16px;
+  font-weight: 400;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card .ride-information .ellipse-113 {
+  flex-shrink: 0;
+  width: 8px;
+  height: 8px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card .ride-information .garia-station-to-howrah {
+  flex-shrink: 0;
+  width: 113px;
+  height: 16px;
+  white-space: nowrap;
+  color: #91929F;
+  font-family: "Open Sans";
+  font-size: 10px;
+  line-height: 16px;
+  font-weight: 400;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card .ride-information .ellipse-114 {
+  flex-shrink: 0;
+  width: 8px;
+  height: 8px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card .ride-information .text-58-stops {
+  flex-shrink: 0;
+  width: 53px;
+  height: 16px;
+  color: #91929F;
+  font-family: "Open Sans";
+  font-size: 10px;
+  line-height: 16px;
+  font-weight: 400;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-1 {
+  flex-shrink: 0;
+  width: 361px;
+  height: 121px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 10px;
+  column-gap: 10px;
+  padding: 15px 13px 15px 13px;
+  background: #FFFFFF;
+  border: 0.5px solid #907EFF;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-1 .bus-info-and-fare-1 {
+  flex-shrink: 0;
+  width: 335px;
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  column-gap: 187px;
+  row-gap: 0px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-1 .bus-info-and-fare-1 .bus-info-1 {
+  flex-shrink: 0;
+  width: 108px;
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  row-gap: 0px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-1 .bus-info-and-fare-1 .bus-info-1 > *:not(:first-child) {
+  margin-left: -47px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-1 .bus-info-and-fare-1 .bus-info-1 .bus-name-1 {
+  flex-shrink: 0;
+  width: 108px;
+  height: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 1px;
+  column-gap: 1px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-1 .bus-info-and-fare-1 .bus-info-1 .bus-name-1 .ac-112 {
+  flex-shrink: 0;
+  width: 48px;
+  height: 15px;
+  white-space: nowrap;
+  color: #9E9E9E;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 15px;
+  font-weight: 700;
+  text-align: center;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-1 .bus-info-and-fare-1 .bus-info-1 .bus-name-1 .gariahaat-howrah {
+  flex-shrink: 0;
+  width: 108px;
+  height: 16px;
+  white-space: nowrap;
+  color: #91929F;
+  font-family: "Open Sans";
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  text-align: right;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-1 .bus-info-and-fare-1 .bus-info-1 .cheap-tag {
+  flex-shrink: 0;
+  width: 47px;
+  height: 17px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 0px 5px 0px 5px;
+  background: rgba(255, 255, 255, 0);
+  border: 0.5px solid #45A80B;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-1 .bus-info-and-fare-1 .bus-info-1 .cheap-tag .cheapest {
+  flex-shrink: 0;
+  width: 37px;
+  height: 17px;
+  white-space: nowrap;
+  color: #45A80B;
+  font-family: "Open Sans";
+  font-size: 8px;
+  line-height: 17px;
+  font-weight: 600;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-1 .bus-info-and-fare-1 .fare-1 {
+  flex-shrink: 0;
+  width: 40px;
+  height: 15px;
+  white-space: nowrap;
+  color: #2C2C2C;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 15px;
+  font-weight: 700;
+  text-align: center;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-1 .time-1 {
+  flex-shrink: 0;
+  width: 335px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  row-gap: 0px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-1 .time-1 .departure-information-1 {
+  flex-shrink: 0;
+  width: 69px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-1 .time-1 .departure-information-1 .text-0820am {
+  flex-shrink: 0;
+  width: 69px;
+  height: 24px;
+  white-space: nowrap;
+  color: #907EFF;
+  font-family: "D-DIN";
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-1 .time-1 .departure-information-1 .text-0820am > div {
+  width: 100%;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-1 .time-1 .departure-information-1 .text-0820am > div span:nth-child(2) {
+  font-size: 14px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-1 .time-1 .time-gap-1 {
+  flex-shrink: 0;
+  width: 161px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 0px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-1 .time-1 .time-gap-1 .line-56 {
+  flex-shrink: 0;
+  width: 52px;
+  height: 7px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-1 .time-1 .time-gap-1 .frame-44 {
+  flex-shrink: 0;
+  width: 57px;
+  height: 24px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  padding: 8px 2px 8px 2px;
+  background: rgba(255, 255, 255, 0);
+  border: 1px solid #907EFF;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-1 .time-1 .time-gap-1 .frame-44 .text-1h-30m {
+  flex-shrink: 0;
+  width: 53px;
+  height: 8px;
+  color: #907EFF;
+  font-family: "Open Sans";
+  font-size: 10px;
+  line-height: 8px;
+  font-weight: 400;
+  text-align: center;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-1 .time-1 .time-gap-1 .line-57 {
+  flex-shrink: 0;
+  width: 52px;
+  height: 7px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-1 .time-1 .landing-information-1 {
+  flex-shrink: 0;
+  width: 69px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-1 .time-1 .landing-information-1 .text-0950am {
+  flex-shrink: 0;
+  width: 69px;
+  height: 24px;
+  white-space: nowrap;
+  color: #907EFF;
+  font-family: "D-DIN";
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: right;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-1 .time-1 .landing-information-1 .text-0950am > div {
+  width: 100%;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-1 .time-1 .landing-information-1 .text-0950am > div span:nth-child(2) {
+  font-size: 14px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-1 .ride-information-1 {
+  flex-shrink: 0;
+  width: 294px;
+  height: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  column-gap: 6px;
+  row-gap: 0px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-1 .ride-information-1 .wb-c6-3522 {
+  flex-shrink: 0;
+  width: 56px;
+  height: 16px;
+  white-space: nowrap;
+  color: #91929F;
+  font-family: "Open Sans";
+  font-size: 10px;
+  line-height: 16px;
+  font-weight: 400;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-1 .ride-information-1 .ellipse-115 {
+  flex-shrink: 0;
+  width: 8px;
+  height: 8px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-1 .ride-information-1 .gariahaat-to-howrah {
+  flex-shrink: 0;
+  width: 98px;
+  height: 16px;
+  white-space: nowrap;
+  color: #91929F;
+  font-family: "Open Sans";
+  font-size: 10px;
+  line-height: 16px;
+  font-weight: 400;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-1 .ride-information-1 .ellipse-116 {
+  flex-shrink: 0;
+  width: 8px;
+  height: 8px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-1 .ride-information-1 .text-58-stops-1 {
+  flex-shrink: 0;
+  width: 53px;
+  height: 16px;
+  color: #91929F;
+  font-family: "Open Sans";
+  font-size: 10px;
+  line-height: 16px;
+  font-weight: 400;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-2 {
+  flex-shrink: 0;
+  width: 361px;
+  height: 121px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 10px;
+  column-gap: 10px;
+  padding: 15px 13px 15px 13px;
+  background: #FFFFFF;
+  border: 0.5px solid #907EFF;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-2 .bus-info-and-fare-2 {
+  flex-shrink: 0;
+  width: 335px;
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  column-gap: 200px;
+  row-gap: 0px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-2 .bus-info-and-fare-2 .bus-info-2 {
+  flex-shrink: 0;
+  width: 95px;
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  row-gap: 0px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-2 .bus-info-and-fare-2 .bus-info-2 > *:not(:first-child) {
+  margin-left: -60px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-2 .bus-info-and-fare-2 .bus-info-2 .bus-name-2 {
+  flex-shrink: 0;
+  width: 95px;
+  height: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 1px;
+  column-gap: 1px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-2 .bus-info-and-fare-2 .bus-info-2 .bus-name-2 .rt-s-113 {
+  flex-shrink: 0;
+  width: 59px;
+  height: 15px;
+  white-space: nowrap;
+  color: #9E9E9E;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 15px;
+  font-weight: 700;
+  text-align: center;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-2 .bus-info-and-fare-2 .bus-info-2 .bus-name-2 .naktala-howrah-1 {
+  flex-shrink: 0;
+  width: 95px;
+  height: 16px;
+  white-space: nowrap;
+  color: #91929F;
+  font-family: "Open Sans";
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-2 .bus-info-and-fare-2 .fare-2 {
+  flex-shrink: 0;
+  width: 40px;
+  height: 15px;
+  white-space: nowrap;
+  color: #2C2C2C;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 15px;
+  font-weight: 700;
+  text-align: center;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-2 .time-2 {
+  flex-shrink: 0;
+  width: 335px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  row-gap: 0px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-2 .time-2 .departure-information-2 {
+  flex-shrink: 0;
+  width: 69px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-2 .time-2 .departure-information-2 .text-0830am {
+  flex-shrink: 0;
+  width: 69px;
+  height: 24px;
+  white-space: nowrap;
+  color: #907EFF;
+  font-family: "D-DIN";
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-2 .time-2 .departure-information-2 .text-0830am > div {
+  width: 100%;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-2 .time-2 .departure-information-2 .text-0830am > div span:nth-child(2) {
+  font-size: 14px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-2 .time-2 .time-gap-2 {
+  flex-shrink: 0;
+  width: 161px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 0px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-2 .time-2 .time-gap-2 .line-58 {
+  flex-shrink: 0;
+  width: 52px;
+  height: 7px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-2 .time-2 .time-gap-2 .frame-45 {
+  flex-shrink: 0;
+  width: 57px;
+  height: 24px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  padding: 8px 2px 8px 2px;
+  background: rgba(255, 255, 255, 0);
+  border: 1px solid #907EFF;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-2 .time-2 .time-gap-2 .frame-45 .text-1h-40m-1 {
+  flex-shrink: 0;
+  width: 53px;
+  height: 8px;
+  color: #907EFF;
+  font-family: "Open Sans";
+  font-size: 10px;
+  line-height: 8px;
+  font-weight: 400;
+  text-align: center;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-2 .time-2 .time-gap-2 .line-59 {
+  flex-shrink: 0;
+  width: 52px;
+  height: 7px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-2 .time-2 .landing-information-2 {
+  flex-shrink: 0;
+  width: 62px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-2 .time-2 .landing-information-2 .text-1010am {
+  flex-shrink: 0;
+  width: 62px;
+  height: 24px;
+  white-space: nowrap;
+  color: #907EFF;
+  font-family: "D-DIN";
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: right;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-2 .time-2 .landing-information-2 .text-1010am > div {
+  width: 100%;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-2 .time-2 .landing-information-2 .text-1010am > div span:nth-child(2) {
+  font-size: 14px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-2 .ride-information-2 {
+  flex-shrink: 0;
+  width: 294px;
+  height: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  column-gap: 6px;
+  row-gap: 0px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-2 .ride-information-2 .wb-s5-4567 {
+  flex-shrink: 0;
+  width: 55px;
+  height: 16px;
+  white-space: nowrap;
+  color: #91929F;
+  font-family: "Open Sans";
+  font-size: 10px;
+  line-height: 16px;
+  font-weight: 400;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-2 .ride-information-2 .ellipse-117 {
+  flex-shrink: 0;
+  width: 8px;
+  height: 8px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-2 .ride-information-2 .garia-station-to-howrah-1 {
+  flex-shrink: 0;
+  width: 113px;
+  height: 16px;
+  white-space: nowrap;
+  color: #91929F;
+  font-family: "Open Sans";
+  font-size: 10px;
+  line-height: 16px;
+  font-weight: 400;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-2 .ride-information-2 .ellipse-118 {
+  flex-shrink: 0;
+  width: 8px;
+  height: 8px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-2 .ride-information-2 .text-58-stops-2 {
+  flex-shrink: 0;
+  width: 53px;
+  height: 16px;
+  color: #91929F;
+  font-family: "Open Sans";
+  font-size: 10px;
+  line-height: 16px;
+  font-weight: 400;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-3 {
+  flex-shrink: 0;
+  width: 361px;
+  height: 121px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 10px;
+  column-gap: 10px;
+  padding: 15px 13px 15px 13px;
+  background: #FFFFFF;
+  border: 0.5px solid #907EFF;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-3 .bus-info-and-fare-3 {
+  flex-shrink: 0;
+  width: 334px;
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  column-gap: 187px;
+  row-gap: 0px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-3 .bus-info-and-fare-3 .bus-info-3 {
+  flex-shrink: 0;
+  width: 107px;
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  row-gap: 0px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-3 .bus-info-and-fare-3 .bus-info-3 > *:not(:first-child) {
+  margin-left: -32px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-3 .bus-info-and-fare-3 .bus-info-3 .bus-name-3 {
+  flex-shrink: 0;
+  width: 95px;
+  height: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 1px;
+  column-gap: 1px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-3 .bus-info-and-fare-3 .bus-info-3 .bus-name-3 .rt-s-114 {
+  flex-shrink: 0;
+  width: 59px;
+  height: 15px;
+  white-space: nowrap;
+  color: #9E9E9E;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 15px;
+  font-weight: 700;
+  text-align: center;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-3 .bus-info-and-fare-3 .bus-info-3 .bus-name-3 .naktala-howrah-2 {
+  flex-shrink: 0;
+  width: 95px;
+  height: 16px;
+  white-space: nowrap;
+  color: #91929F;
+  font-family: "Open Sans";
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-3 .bus-info-and-fare-3 .bus-info-3 .quick-tag-1 {
+  flex-shrink: 0;
+  width: 44px;
+  height: 17px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 0px 5px 0px 5px;
+  background: rgba(255, 255, 255, 0);
+  border: 0.5px solid #907EFF;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-3 .bus-info-and-fare-3 .bus-info-3 .quick-tag-1 .quickest-1 {
+  flex-shrink: 0;
+  width: 34px;
+  height: 17px;
+  white-space: nowrap;
+  color: #907EFF;
+  font-family: "Open Sans";
+  font-size: 8px;
+  line-height: 17px;
+  font-weight: 600;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-3 .bus-info-and-fare-3 .fare-3 {
+  flex-shrink: 0;
+  width: 40px;
+  height: 15px;
+  white-space: nowrap;
+  color: #2C2C2C;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 15px;
+  font-weight: 700;
+  text-align: center;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-3 .time-3 {
+  flex-shrink: 0;
+  width: 335px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  row-gap: 0px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-3 .time-3 .departure-information-3 {
+  flex-shrink: 0;
+  width: 69px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-3 .time-3 .departure-information-3 .text-0800am-1 {
+  flex-shrink: 0;
+  width: 69px;
+  height: 24px;
+  white-space: nowrap;
+  color: #907EFF;
+  font-family: "D-DIN";
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-3 .time-3 .departure-information-3 .text-0800am-1 > div {
+  width: 100%;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-3 .time-3 .departure-information-3 .text-0800am-1 > div span:nth-child(2) {
+  font-size: 14px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-3 .time-3 .time-gap-3 {
+  flex-shrink: 0;
+  width: 161px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 0px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-3 .time-3 .time-gap-3 .line-60 {
+  flex-shrink: 0;
+  width: 52px;
+  height: 7px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-3 .time-3 .time-gap-3 .frame-46 {
+  flex-shrink: 0;
+  width: 57px;
+  height: 24px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  padding: 8px 2px 8px 2px;
+  background: rgba(255, 255, 255, 0);
+  border: 1px solid #907EFF;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-3 .time-3 .time-gap-3 .frame-46 .text-1h-40m-2 {
+  flex-shrink: 0;
+  width: 53px;
+  height: 8px;
+  color: #907EFF;
+  font-family: "Open Sans";
+  font-size: 10px;
+  line-height: 8px;
+  font-weight: 400;
+  text-align: center;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-3 .time-3 .time-gap-3 .line-61 {
+  flex-shrink: 0;
+  width: 52px;
+  height: 7px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-3 .time-3 .landing-information-3 {
+  flex-shrink: 0;
+  width: 69px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-3 .time-3 .landing-information-3 .text-0940am-1 {
+  flex-shrink: 0;
+  width: 69px;
+  height: 24px;
+  white-space: nowrap;
+  color: #907EFF;
+  font-family: "D-DIN";
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: right;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-3 .time-3 .landing-information-3 .text-0940am-1 > div {
+  width: 100%;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-3 .time-3 .landing-information-3 .text-0940am-1 > div span:nth-child(2) {
+  font-size: 14px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-3 .ride-information-3 {
+  flex-shrink: 0;
+  width: 294px;
+  height: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  column-gap: 6px;
+  row-gap: 0px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-3 .ride-information-3 .wb-05-2923 {
+  flex-shrink: 0;
+  width: 56px;
+  height: 16px;
+  white-space: nowrap;
+  color: #91929F;
+  font-family: "Open Sans";
+  font-size: 10px;
+  line-height: 16px;
+  font-weight: 400;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-3 .ride-information-3 .ellipse-119 {
+  flex-shrink: 0;
+  width: 8px;
+  height: 8px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-3 .ride-information-3 .garia-station-to-howrah-2 {
+  flex-shrink: 0;
+  width: 113px;
+  height: 16px;
+  white-space: nowrap;
+  color: #91929F;
+  font-family: "Open Sans";
+  font-size: 10px;
+  line-height: 16px;
+  font-weight: 400;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-3 .ride-information-3 .ellipse-120 {
+  flex-shrink: 0;
+  width: 8px;
+  height: 8px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-3 .ride-information-3 .text-58-stops-3 {
+  flex-shrink: 0;
+  width: 53px;
+  height: 16px;
+  color: #91929F;
+  font-family: "Open Sans";
+  font-size: 10px;
+  line-height: 16px;
+  font-weight: 400;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-4 {
+  flex-shrink: 0;
+  width: 361px;
+  height: 121px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 10px;
+  column-gap: 10px;
+  padding: 15px 13px 15px 13px;
+  background: #FFFFFF;
+  border: 0.5px solid #907EFF;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-4 .bus-info-and-fare-4 {
+  flex-shrink: 0;
+  width: 334px;
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  column-gap: 187px;
+  row-gap: 0px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-4 .bus-info-and-fare-4 .bus-info-4 {
+  flex-shrink: 0;
+  width: 107px;
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  row-gap: 0px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-4 .bus-info-and-fare-4 .bus-info-4 > *:not(:first-child) {
+  margin-left: -32px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-4 .bus-info-and-fare-4 .bus-info-4 .bus-name-4 {
+  flex-shrink: 0;
+  width: 95px;
+  height: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 1px;
+  column-gap: 1px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-4 .bus-info-and-fare-4 .bus-info-4 .bus-name-4 .rt-s-115 {
+  flex-shrink: 0;
+  width: 59px;
+  height: 15px;
+  white-space: nowrap;
+  color: #9E9E9E;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 15px;
+  font-weight: 700;
+  text-align: center;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-4 .bus-info-and-fare-4 .bus-info-4 .bus-name-4 .naktala-howrah-3 {
+  flex-shrink: 0;
+  width: 95px;
+  height: 16px;
+  white-space: nowrap;
+  color: #91929F;
+  font-family: "Open Sans";
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-4 .bus-info-and-fare-4 .bus-info-4 .quick-tag-2 {
+  flex-shrink: 0;
+  width: 44px;
+  height: 17px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 0px 5px 0px 5px;
+  background: rgba(255, 255, 255, 0);
+  border: 0.5px solid #907EFF;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-4 .bus-info-and-fare-4 .bus-info-4 .quick-tag-2 .quickest-2 {
+  flex-shrink: 0;
+  width: 34px;
+  height: 17px;
+  white-space: nowrap;
+  color: #907EFF;
+  font-family: "Open Sans";
+  font-size: 8px;
+  line-height: 17px;
+  font-weight: 600;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-4 .bus-info-and-fare-4 .fare-4 {
+  flex-shrink: 0;
+  width: 40px;
+  height: 15px;
+  white-space: nowrap;
+  color: #2C2C2C;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 15px;
+  font-weight: 700;
+  text-align: center;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-4 .time-4 {
+  flex-shrink: 0;
+  width: 335px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  row-gap: 0px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-4 .time-4 .departure-information-4 {
+  flex-shrink: 0;
+  width: 69px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-4 .time-4 .departure-information-4 .text-0800am-2 {
+  flex-shrink: 0;
+  width: 69px;
+  height: 24px;
+  white-space: nowrap;
+  color: #907EFF;
+  font-family: "D-DIN";
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-4 .time-4 .departure-information-4 .text-0800am-2 > div {
+  width: 100%;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-4 .time-4 .departure-information-4 .text-0800am-2 > div span:nth-child(2) {
+  font-size: 14px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-4 .time-4 .time-gap-4 {
+  flex-shrink: 0;
+  width: 161px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 0px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-4 .time-4 .time-gap-4 .line-62 {
+  flex-shrink: 0;
+  width: 52px;
+  height: 7px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-4 .time-4 .time-gap-4 .frame-47 {
+  flex-shrink: 0;
+  width: 57px;
+  height: 24px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  padding: 8px 2px 8px 2px;
+  background: rgba(255, 255, 255, 0);
+  border: 1px solid #907EFF;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-4 .time-4 .time-gap-4 .frame-47 .text-1h-40m-3 {
+  flex-shrink: 0;
+  width: 53px;
+  height: 8px;
+  color: #907EFF;
+  font-family: "Open Sans";
+  font-size: 10px;
+  line-height: 8px;
+  font-weight: 400;
+  text-align: center;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-4 .time-4 .time-gap-4 .line-63 {
+  flex-shrink: 0;
+  width: 52px;
+  height: 7px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-4 .time-4 .landing-information-4 {
+  flex-shrink: 0;
+  width: 69px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-4 .time-4 .landing-information-4 .text-0940am-2 {
+  flex-shrink: 0;
+  width: 69px;
+  height: 24px;
+  white-space: nowrap;
+  color: #907EFF;
+  font-family: "D-DIN";
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: right;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-4 .time-4 .landing-information-4 .text-0940am-2 > div {
+  width: 100%;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-4 .time-4 .landing-information-4 .text-0940am-2 > div span:nth-child(2) {
+  font-size: 14px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-4 .ride-information-4 {
+  flex-shrink: 0;
+  width: 294px;
+  height: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  column-gap: 6px;
+  row-gap: 0px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-4 .ride-information-4 .wb-05-2924 {
+  flex-shrink: 0;
+  width: 56px;
+  height: 16px;
+  white-space: nowrap;
+  color: #91929F;
+  font-family: "Open Sans";
+  font-size: 10px;
+  line-height: 16px;
+  font-weight: 400;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-4 .ride-information-4 .ellipse-121 {
+  flex-shrink: 0;
+  width: 8px;
+  height: 8px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-4 .ride-information-4 .garia-station-to-howrah-3 {
+  flex-shrink: 0;
+  width: 113px;
+  height: 16px;
+  white-space: nowrap;
+  color: #91929F;
+  font-family: "Open Sans";
+  font-size: 10px;
+  line-height: 16px;
+  font-weight: 400;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-4 .ride-information-4 .ellipse-122 {
+  flex-shrink: 0;
+  width: 8px;
+  height: 8px;
+}
+.search-results-page .bottom-content .ticket-select-section .ticket-cards-container .ticket-card-4 .ride-information-4 .text-58-stops-4 {
+  flex-shrink: 0;
+  width: 53px;
+  height: 16px;
+  color: #91929F;
+  font-family: "Open Sans";
+  font-size: 10px;
+  line-height: 16px;
+  font-weight: 400;
+}

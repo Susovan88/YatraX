@@ -1,0 +1,900 @@
+.ticket-page {
+  width: 402px;
+  height: 857px;
+  border-radius: 40px;
+  overflow: hidden;
+  background: #FFFFFF;
+}
+.ticket-page .background-color-splash {
+  position: absolute;
+  top: -266px;
+  left: -8px;
+  width: 609px;
+  height: 602px;
+  background: radial-gradient(circle at 50% 50%, #c0ec4e 0%, rgba(216, 216, 216, 0) 100%);
+}
+.ticket-page .your-tickets {
+  position: absolute;
+  top: 54px;
+  left: 25px;
+  width: 245px;
+  height: 18px;
+  white-space: nowrap;
+  color: #4C4C57;
+  font-family: "Days One";
+  font-size: 36px;
+  line-height: 18px;
+  font-weight: 400;
+}
+.ticket-page .nav-bar {
+  position: absolute;
+  left: calc(100% - 402px + 78.5px);
+  bottom: 17px;
+  width: 246px;
+  height: 48px;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  column-gap: 14px;
+  row-gap: 0px;
+  padding: 6px 14px 6px 14px;
+  background: #030318;
+}
+.ticket-page .nav-bar .home-icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.ticket-page .nav-bar .ticket-exp {
+  flex-shrink: 0;
+  width: 104px;
+  height: 36px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 4px;
+  row-gap: 0px;
+  padding: 6px 14px 6px 14px;
+  background: #D8D8D8;
+}
+.ticket-page .nav-bar .ticket-exp .tickets {
+  flex-shrink: 0;
+  width: 48px;
+  height: 20px;
+  white-space: nowrap;
+  color: #030318;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+}
+.ticket-page .nav-bar .ticket-exp .ticket-icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.ticket-page .nav-bar .journey {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.ticket-page .nav-bar .profile-icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.ticket-page .ticket-container {
+  position: absolute;
+  top: 143px;
+  left: calc(100% - 402px + 19px);
+  width: 365px;
+  height: 474.88px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 16px;
+  column-gap: 16px;
+}
+.ticket-page .ticket-container .ticket-card {
+  flex-shrink: 0;
+  width: 365px;
+  height: 147.63px;
+  border-radius: 16px 0px 0px 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  row-gap: 0px;
+  overflow: hidden;
+}
+.ticket-page .ticket-container .ticket-card .type {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 44px;
+  height: 147.63px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  row-gap: 0px;
+}
+.ticket-page .ticket-container .ticket-card .type .background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 44px;
+  height: 147.63px;
+}
+.ticket-page .ticket-container .ticket-card .type .bus-ticket {
+  flex-shrink: 0;
+  width: 109px;
+  height: 24px;
+  transform-origin: 0 0;
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  color: #FFFFFF;
+  font-family: "D-DIN";
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+.ticket-page .ticket-container .ticket-card .background-2 {
+  position: absolute;
+  top: 0px;
+  left: 44px;
+  right: 0px;
+  bottom: 0px;
+  width: 321px;
+  height: 147.63px;
+  border-radius: 0px 12px 12px 0px;
+  background: #FFFFFF;
+  border: 1px solid #907EFF;
+}
+.ticket-page .ticket-container .ticket-card .content {
+  flex-grow: 1;
+  width: 321px;
+  height: 147.63px;
+  border-radius: 0px 12px 12px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  row-gap: 10px;
+  column-gap: 10px;
+  padding: 10px;
+  border: 1px solid #907EFF;
+}
+.ticket-page .ticket-container .ticket-card .content .businessmen {
+  flex-shrink: 0;
+  width: 303px;
+  height: 32.63px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  column-gap: 6px;
+  row-gap: 0px;
+}
+.ticket-page .ticket-container .ticket-card .content .businessmen .bus {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32.63px;
+  object-fit: cover;
+}
+.ticket-page .ticket-container .ticket-card .content .businessmen .naktala-howrah-s-112 {
+  flex-shrink: 0;
+  width: 189px;
+  height: 24px;
+  color: #26262C;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.ticket-page .ticket-container .ticket-card .content .businessmen .naktala-howrah-s-112 > div {
+  width: 100%;
+}
+.ticket-page .ticket-container .ticket-card .content .businessmen .wb-052922 {
+  flex-shrink: 0;
+  width: 70px;
+  height: 20px;
+  white-space: nowrap;
+  color: #907EFF;
+  font-family: "Open Sans";
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+.ticket-page .ticket-container .ticket-card .content .line-24 {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 301px;
+  border: 1px dashed #907EFF;
+}
+.ticket-page .ticket-container .ticket-card .content .time-line {
+  flex-shrink: 0;
+  width: 294px;
+  height: 31px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 8px;
+  row-gap: 0px;
+}
+.ticket-page .ticket-container .ticket-card .content .time-line .location {
+  flex-shrink: 0;
+  width: 103px;
+  height: 31px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 6px 22px 6px 22px;
+  background: #FFFFFF;
+  border: 1px solid #907EFF;
+}
+.ticket-page .ticket-container .ticket-card .content .time-line .location .garia-st {
+  flex-shrink: 0;
+  width: 60px;
+  height: 20px;
+  color: #656565;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.ticket-page .ticket-container .ticket-card .content .time-line .line-80 {
+  flex-shrink: 0;
+  width: 55px;
+  height: 5px;
+}
+.ticket-page .ticket-container .ticket-card .content .time-line .destination {
+  flex-shrink: 0;
+  width: 120px;
+  height: 31px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 6px 22px 6px 22px;
+  background: #FFFFFF;
+  border: 1px solid #907EFF;
+}
+.ticket-page .ticket-container .ticket-card .content .time-line .destination .howrah-st {
+  flex-shrink: 0;
+  width: 77px;
+  height: 20px;
+  white-space: nowrap;
+  color: #656565;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.ticket-page .ticket-container .ticket-card .content .line-23 {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 301px;
+  border: 1px dashed #907EFF;
+}
+.ticket-page .ticket-container .ticket-card .content .bottom-section {
+  flex-shrink: 0;
+  width: 301px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  row-gap: 0px;
+}
+.ticket-page .ticket-container .ticket-card .content .bottom-section .ticket-info {
+  flex-shrink: 0;
+  width: 277px;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 8px;
+  row-gap: 0px;
+}
+.ticket-page .ticket-container .ticket-card .content .bottom-section .ticket-info .date-30-june {
+  flex-shrink: 0;
+  width: 87px;
+  height: 20px;
+  color: #656565;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.ticket-page .ticket-container .ticket-card .content .bottom-section .ticket-info .time-750am {
+  flex-shrink: 0;
+  width: 87px;
+  height: 20px;
+  color: #656565;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.ticket-page .ticket-container .ticket-card .content .bottom-section .ticket-info .time-750am > div {
+  width: 100%;
+}
+.ticket-page .ticket-container .ticket-card .content .bottom-section .ticket-info .time-750am > div span:nth-child(2) {
+  font-size: 10px;
+}
+.ticket-page .ticket-container .ticket-card .content .bottom-section .ticket-info .persons-02 {
+  flex-shrink: 0;
+  width: 87px;
+  height: 20px;
+  color: #656565;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.ticket-page .ticket-container .ticket-card .content .bottom-section .ic-outline-qr-code-scanner {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.ticket-page .ticket-container .ticket-card-1 {
+  flex-shrink: 0;
+  width: 365px;
+  height: 147.63px;
+  border-radius: 16px 0px 0px 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  row-gap: 0px;
+  overflow: hidden;
+}
+.ticket-page .ticket-container .ticket-card-1 .type-1 {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 44px;
+  height: 147.63px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  row-gap: 0px;
+}
+.ticket-page .ticket-container .ticket-card-1 .type-1 .background-3 {
+  position: absolute;
+  top: -0.63px;
+  left: 0px;
+  width: 44px;
+  height: 147.63px;
+}
+.ticket-page .ticket-container .ticket-card-1 .type-1 .bus-ticket-1 {
+  flex-shrink: 0;
+  width: 109px;
+  height: 24px;
+  transform-origin: 0 0;
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  color: #FFFFFF;
+  font-family: "D-DIN";
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+.ticket-page .ticket-container .ticket-card-1 .background-5 {
+  position: absolute;
+  top: 0px;
+  left: 44px;
+  right: 0px;
+  bottom: 0px;
+  width: 321px;
+  height: 147.63px;
+  border-radius: 0px 12px 12px 0px;
+  background: #FFFFFF;
+  border: 1px solid #907EFF;
+}
+.ticket-page .ticket-container .ticket-card-1 .content-1 {
+  flex-grow: 1;
+  width: 321px;
+  height: 147.63px;
+  border-radius: 0px 12px 12px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  row-gap: 10px;
+  column-gap: 10px;
+  padding: 10px;
+  border: 1px solid #907EFF;
+}
+.ticket-page .ticket-container .ticket-card-1 .content-1 .businessmen-1 {
+  flex-shrink: 0;
+  width: 303px;
+  height: 32.63px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  column-gap: 6px;
+  row-gap: 0px;
+}
+.ticket-page .ticket-container .ticket-card-1 .content-1 .businessmen-1 .bus-1 {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32.63px;
+  object-fit: cover;
+}
+.ticket-page .ticket-container .ticket-card-1 .content-1 .businessmen-1 .naktala-howrah-s-113 {
+  flex-shrink: 0;
+  width: 189px;
+  height: 24px;
+  color: #26262C;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.ticket-page .ticket-container .ticket-card-1 .content-1 .businessmen-1 .naktala-howrah-s-113 > div {
+  width: 100%;
+}
+.ticket-page .ticket-container .ticket-card-1 .content-1 .businessmen-1 .wb-52923 {
+  flex-shrink: 0;
+  width: 70px;
+  height: 20px;
+  white-space: nowrap;
+  color: #907EFF;
+  font-family: "Open Sans";
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+.ticket-page .ticket-container .ticket-card-1 .content-1 .line-25 {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 301px;
+  border: 1px dashed #907EFF;
+}
+.ticket-page .ticket-container .ticket-card-1 .content-1 .time-line-1 {
+  flex-shrink: 0;
+  width: 294px;
+  height: 31px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 8px;
+  row-gap: 0px;
+}
+.ticket-page .ticket-container .ticket-card-1 .content-1 .time-line-1 .location-1 {
+  flex-shrink: 0;
+  width: 103px;
+  height: 31px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 6px 22px 6px 22px;
+  background: #FFFFFF;
+  border: 1px solid #907EFF;
+}
+.ticket-page .ticket-container .ticket-card-1 .content-1 .time-line-1 .location-1 .garia-st-1 {
+  flex-shrink: 0;
+  width: 60px;
+  height: 20px;
+  color: #656565;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.ticket-page .ticket-container .ticket-card-1 .content-1 .time-line-1 .line-81 {
+  flex-shrink: 0;
+  width: 55px;
+  height: 5px;
+}
+.ticket-page .ticket-container .ticket-card-1 .content-1 .time-line-1 .destination-1 {
+  flex-shrink: 0;
+  width: 120px;
+  height: 31px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 6px 22px 6px 22px;
+  background: #FFFFFF;
+  border: 1px solid #907EFF;
+}
+.ticket-page .ticket-container .ticket-card-1 .content-1 .time-line-1 .destination-1 .howrah-st-1 {
+  flex-shrink: 0;
+  width: 77px;
+  height: 20px;
+  white-space: nowrap;
+  color: #656565;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.ticket-page .ticket-container .ticket-card-1 .content-1 .line-26 {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 301px;
+  border: 1px dashed #907EFF;
+}
+.ticket-page .ticket-container .ticket-card-1 .content-1 .bottom-section-1 {
+  flex-shrink: 0;
+  width: 301px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  row-gap: 0px;
+}
+.ticket-page .ticket-container .ticket-card-1 .content-1 .bottom-section-1 .ticket-info-1 {
+  flex-shrink: 0;
+  width: 277px;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 8px;
+  row-gap: 0px;
+}
+.ticket-page .ticket-container .ticket-card-1 .content-1 .bottom-section-1 .ticket-info-1 .date-30-june-1 {
+  flex-shrink: 0;
+  width: 87px;
+  height: 20px;
+  color: #656565;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.ticket-page .ticket-container .ticket-card-1 .content-1 .bottom-section-1 .ticket-info-1 .time-750am-1 {
+  flex-shrink: 0;
+  width: 87px;
+  height: 20px;
+  color: #656565;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.ticket-page .ticket-container .ticket-card-1 .content-1 .bottom-section-1 .ticket-info-1 .time-750am-1 > div {
+  width: 100%;
+}
+.ticket-page .ticket-container .ticket-card-1 .content-1 .bottom-section-1 .ticket-info-1 .time-750am-1 > div span:nth-child(2) {
+  font-size: 10px;
+}
+.ticket-page .ticket-container .ticket-card-1 .content-1 .bottom-section-1 .ticket-info-1 .persons-3 {
+  flex-shrink: 0;
+  width: 87px;
+  height: 20px;
+  color: #656565;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.ticket-page .ticket-container .ticket-card-1 .content-1 .bottom-section-1 .ic-outline-qr-code-scanner-1 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.ticket-page .ticket-container .ticket-card-2 {
+  flex-shrink: 0;
+  width: 365px;
+  height: 147.63px;
+  border-radius: 16px 0px 0px 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  row-gap: 0px;
+  overflow: hidden;
+}
+.ticket-page .ticket-container .ticket-card-2 .type-2 {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 44px;
+  height: 147.63px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  row-gap: 0px;
+}
+.ticket-page .ticket-container .ticket-card-2 .type-2 .background-6 {
+  position: absolute;
+  top: -0.25px;
+  left: 0px;
+  width: 44px;
+  height: 147.63px;
+}
+.ticket-page .ticket-container .ticket-card-2 .type-2 .bus-ticket-2 {
+  flex-shrink: 0;
+  width: 109px;
+  height: 24px;
+  transform-origin: 0 0;
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  color: #FFFFFF;
+  font-family: "D-DIN";
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+.ticket-page .ticket-container .ticket-card-2 .background-8 {
+  position: absolute;
+  top: 0px;
+  left: 44px;
+  right: 0px;
+  bottom: 0px;
+  width: 321px;
+  height: 147.63px;
+  border-radius: 0px 12px 12px 0px;
+  background: #FFFFFF;
+  border: 1px solid #907EFF;
+}
+.ticket-page .ticket-container .ticket-card-2 .content-2 {
+  flex-grow: 1;
+  width: 321px;
+  height: 147.63px;
+  border-radius: 0px 12px 12px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  row-gap: 10px;
+  column-gap: 10px;
+  padding: 10px;
+  border: 1px solid #907EFF;
+}
+.ticket-page .ticket-container .ticket-card-2 .content-2 .businessmen-2 {
+  flex-shrink: 0;
+  width: 303px;
+  height: 32.63px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  column-gap: 6px;
+  row-gap: 0px;
+}
+.ticket-page .ticket-container .ticket-card-2 .content-2 .businessmen-2 .bus-2 {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32.63px;
+  object-fit: cover;
+}
+.ticket-page .ticket-container .ticket-card-2 .content-2 .businessmen-2 .naktala-howrah-s-114 {
+  flex-shrink: 0;
+  width: 189px;
+  height: 24px;
+  color: #26262C;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.ticket-page .ticket-container .ticket-card-2 .content-2 .businessmen-2 .naktala-howrah-s-114 > div {
+  width: 100%;
+}
+.ticket-page .ticket-container .ticket-card-2 .content-2 .businessmen-2 .wb-52924 {
+  flex-shrink: 0;
+  width: 70px;
+  height: 20px;
+  white-space: nowrap;
+  color: #907EFF;
+  font-family: "Open Sans";
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+.ticket-page .ticket-container .ticket-card-2 .content-2 .line-27 {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 301px;
+  border: 1px dashed #907EFF;
+}
+.ticket-page .ticket-container .ticket-card-2 .content-2 .time-line-2 {
+  flex-shrink: 0;
+  width: 294px;
+  height: 31px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 8px;
+  row-gap: 0px;
+}
+.ticket-page .ticket-container .ticket-card-2 .content-2 .time-line-2 .location-2 {
+  flex-shrink: 0;
+  width: 103px;
+  height: 31px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 6px 22px 6px 22px;
+  background: #FFFFFF;
+  border: 1px solid #907EFF;
+}
+.ticket-page .ticket-container .ticket-card-2 .content-2 .time-line-2 .location-2 .garia-st-2 {
+  flex-shrink: 0;
+  width: 60px;
+  height: 20px;
+  color: #656565;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.ticket-page .ticket-container .ticket-card-2 .content-2 .time-line-2 .line-82 {
+  flex-shrink: 0;
+  width: 55px;
+  height: 5px;
+}
+.ticket-page .ticket-container .ticket-card-2 .content-2 .time-line-2 .destination-2 {
+  flex-shrink: 0;
+  width: 120px;
+  height: 31px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 6px 22px 6px 22px;
+  background: #FFFFFF;
+  border: 1px solid #907EFF;
+}
+.ticket-page .ticket-container .ticket-card-2 .content-2 .time-line-2 .destination-2 .howrah-st-2 {
+  flex-shrink: 0;
+  width: 77px;
+  height: 20px;
+  white-space: nowrap;
+  color: #656565;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.ticket-page .ticket-container .ticket-card-2 .content-2 .line-28 {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 301px;
+  border: 1px dashed #907EFF;
+}
+.ticket-page .ticket-container .ticket-card-2 .content-2 .bottom-section-2 {
+  flex-shrink: 0;
+  width: 301px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  row-gap: 0px;
+}
+.ticket-page .ticket-container .ticket-card-2 .content-2 .bottom-section-2 .ticket-info-2 {
+  flex-shrink: 0;
+  width: 277px;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 8px;
+  row-gap: 0px;
+}
+.ticket-page .ticket-container .ticket-card-2 .content-2 .bottom-section-2 .ticket-info-2 .date-30-june-2 {
+  flex-shrink: 0;
+  width: 87px;
+  height: 20px;
+  color: #656565;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.ticket-page .ticket-container .ticket-card-2 .content-2 .bottom-section-2 .ticket-info-2 .time-750am-2 {
+  flex-shrink: 0;
+  width: 87px;
+  height: 20px;
+  color: #656565;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.ticket-page .ticket-container .ticket-card-2 .content-2 .bottom-section-2 .ticket-info-2 .time-750am-2 > div {
+  width: 100%;
+}
+.ticket-page .ticket-container .ticket-card-2 .content-2 .bottom-section-2 .ticket-info-2 .time-750am-2 > div span:nth-child(2) {
+  font-size: 10px;
+}
+.ticket-page .ticket-container .ticket-card-2 .content-2 .bottom-section-2 .ticket-info-2 .persons-4 {
+  flex-shrink: 0;
+  width: 87px;
+  height: 20px;
+  color: #656565;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.ticket-page .ticket-container .ticket-card-2 .content-2 .bottom-section-2 .ic-outline-qr-code-scanner-2 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
