@@ -1,0 +1,3503 @@
+.dashboard {
+  width: 1440px;
+  height: 1077px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #FFFFFF;
+}
+.dashboard .background-color-splash {
+  position: absolute;
+  top: -548px;
+  left: 860.03px;
+  width: 1440px;
+  height: 853.94px;
+  transform-origin: 0 0;
+  transform: rotate(21deg);
+  background: radial-gradient(circle at 50% 50%, #c0ec4e 0%, rgba(255, 255, 255, 0) 100%);
+}
+.dashboard .background-color-splash-1 {
+  position: absolute;
+  top: 284px;
+  left: -425.97px;
+  width: 1440px;
+  height: 853.94px;
+  transform-origin: 0 0;
+  transform: rotate(21deg);
+  background: radial-gradient(circle at 50% 50%, #c0ec4e 0%, rgba(255, 255, 255, 0) 100%);
+}
+.dashboard .dashboard-content {
+  position: absolute;
+  top: 54px;
+  left: 61px;
+  width: 1320px;
+  height: 971px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  row-gap: 40px;
+  column-gap: 40px;
+}
+.dashboard .dashboard-content .header {
+  flex-shrink: 0;
+  width: 1304px;
+  height: 64px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  column-gap: 560px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .header .driver-dashboard {
+  flex-shrink: 0;
+  width: 614px;
+  height: 64px;
+  white-space: nowrap;
+  color: #9E9E9E;
+  font-family: "Days One";
+  font-size: 64px;
+  line-height: 64px;
+  font-weight: 400;
+}
+.dashboard .dashboard-content .header .btn-container {
+  flex-shrink: 0;
+  width: 130px;
+  height: 52px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 26px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .header .btn-container .settings-button {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+}
+.dashboard .dashboard-content .header .btn-container .profile-photo {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  border-radius: 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-sizing: content-box;
+  border: 3px solid #6A54EE;
+}
+.dashboard .dashboard-content .header .btn-container .profile-photo .image {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  object-fit: cover;
+}
+.dashboard .dashboard-content .route-container {
+  flex-shrink: 0;
+  width: 1319px;
+  height: 558px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  padding: 0px 52px 0px 52px;
+  background: #FFFFFF;
+  border: 1px solid #545357;
+}
+.dashboard .dashboard-content .route-container .connector-2 {
+  flex-shrink: 0;
+  width: 30px;
+  height: 186px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 {
+  flex-shrink: 0;
+  width: 1215px;
+  height: 186px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  column-gap: 20px;
+  row-gap: 0px;
+  padding: 24px 0px 24px 0px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step {
+  flex-shrink: 0;
+  width: 105px;
+  height: 136px;
+  min-width: 105px;
+  min-height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 8px;
+  column-gap: 8px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step .garia {
+  flex-shrink: 0;
+  width: 49px;
+  height: 24px;
+  white-space: nowrap;
+  color: #656565;
+  font-family: "Open Sans";
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step .icon {
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step .passengers-counts {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 105px;
+  height: 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 6px;
+  column-gap: 6px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step .passengers-counts .up-passsengers {
+  flex-shrink: 0;
+  width: 53px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 6px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step .passengers-counts .up-passsengers .green-arrow {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step .passengers-counts .up-passsengers .text-14 {
+  flex-shrink: 0;
+  width: 23px;
+  height: 18px;
+  white-space: nowrap;
+  color: #34A854;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step .passengers-counts .down-passsengers {
+  flex-shrink: 0;
+  width: 51px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 4px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step .passengers-counts .down-passsengers .red-arrow {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step .passengers-counts .down-passsengers .text-00 {
+  flex-shrink: 0;
+  width: 23px;
+  height: 18px;
+  white-space: nowrap;
+  color: #CA0909;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .line-79 {
+  flex-shrink: 0;
+  width: 40px;
+  height: 10px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-1 {
+  flex-shrink: 0;
+  width: 105px;
+  height: 136px;
+  min-width: 105px;
+  min-height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 8px;
+  column-gap: 8px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-1 .text-45b-no {
+  flex-shrink: 0;
+  width: 64px;
+  height: 24px;
+  white-space: nowrap;
+  color: #656565;
+  font-family: "Open Sans";
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-1 .icon-1 {
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-1 .passengers-counts-1 {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 105px;
+  height: 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 6px;
+  column-gap: 6px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-1 .passengers-counts-1 .up-passsengers-1 {
+  flex-shrink: 0;
+  width: 53px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 6px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-1 .passengers-counts-1 .up-passsengers-1 .green-arrow-1 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-1 .passengers-counts-1 .up-passsengers-1 .text-05 {
+  flex-shrink: 0;
+  width: 23px;
+  height: 18px;
+  white-space: nowrap;
+  color: #34A854;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-1 .passengers-counts-1 .down-passsengers-1 {
+  flex-shrink: 0;
+  width: 51px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 4px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-1 .passengers-counts-1 .down-passsengers-1 .red-arrow-1 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-1 .passengers-counts-1 .down-passsengers-1 .text-03 {
+  flex-shrink: 0;
+  width: 23px;
+  height: 18px;
+  white-space: nowrap;
+  color: #CA0909;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .line-78 {
+  flex-shrink: 0;
+  width: 40px;
+  height: 10px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-2 {
+  flex-shrink: 0;
+  width: 105px;
+  height: 136px;
+  min-width: 105px;
+  min-height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 8px;
+  column-gap: 8px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-2 .naktala {
+  flex-shrink: 0;
+  width: 72px;
+  height: 24px;
+  white-space: nowrap;
+  color: #656565;
+  font-family: "Open Sans";
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-2 .icon-2 {
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-2 .passengers-counts-2 {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 105px;
+  height: 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 6px;
+  column-gap: 6px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-2 .passengers-counts-2 .up-passsengers-2 {
+  flex-shrink: 0;
+  width: 53px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 6px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-2 .passengers-counts-2 .up-passsengers-2 .green-arrow-2 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-2 .passengers-counts-2 .up-passsengers-2 .text-6 {
+  flex-shrink: 0;
+  width: 23px;
+  height: 18px;
+  white-space: nowrap;
+  color: #34A854;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-2 .passengers-counts-2 .down-passsengers-2 {
+  flex-shrink: 0;
+  width: 51px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 4px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-2 .passengers-counts-2 .down-passsengers-2 .red-arrow-2 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-2 .passengers-counts-2 .down-passsengers-2 .text-4 {
+  flex-shrink: 0;
+  width: 23px;
+  height: 18px;
+  white-space: nowrap;
+  color: #CA0909;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .line-77 {
+  flex-shrink: 0;
+  width: 40px;
+  height: 10px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-3 {
+  flex-shrink: 0;
+  width: 105px;
+  height: 136px;
+  min-width: 105px;
+  min-height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 8px;
+  column-gap: 8px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-3 .bansdroni {
+  flex-shrink: 0;
+  width: 92px;
+  height: 24px;
+  white-space: nowrap;
+  color: #656565;
+  font-family: "Open Sans";
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-3 .icon-3 {
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-3 .passengers-counts-3 {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 105px;
+  height: 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 6px;
+  column-gap: 6px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-3 .passengers-counts-3 .up-passsengers-3 {
+  flex-shrink: 0;
+  width: 53px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 6px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-3 .passengers-counts-3 .up-passsengers-3 .green-arrow-3 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-3 .passengers-counts-3 .up-passsengers-3 .text-7 {
+  flex-shrink: 0;
+  width: 23px;
+  height: 18px;
+  white-space: nowrap;
+  color: #34A854;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-3 .passengers-counts-3 .down-passsengers-3 {
+  flex-shrink: 0;
+  width: 51px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 4px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-3 .passengers-counts-3 .down-passsengers-3 .red-arrow-3 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-3 .passengers-counts-3 .down-passsengers-3 .text-5 {
+  flex-shrink: 0;
+  width: 23px;
+  height: 18px;
+  white-space: nowrap;
+  color: #CA0909;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .line-76 {
+  flex-shrink: 0;
+  width: 40px;
+  height: 10px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-4 {
+  flex-shrink: 0;
+  width: 105px;
+  height: 138px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 12px;
+  column-gap: 12px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-4 .tallygunge {
+  flex-shrink: 0;
+  width: 105px;
+  height: 20px;
+  min-width: 105px;
+  min-height: 20px;
+  color: #656565;
+  font-family: "Open Sans";
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-4 .icon-4 {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-4 .passengers-counts-4 {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 105px;
+  height: 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 6px;
+  column-gap: 6px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-4 .passengers-counts-4 .up-passsengers-4 {
+  flex-shrink: 0;
+  width: 53px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 6px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-4 .passengers-counts-4 .up-passsengers-4 .green-arrow-4 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-4 .passengers-counts-4 .up-passsengers-4 .text-8 {
+  flex-shrink: 0;
+  width: 23px;
+  height: 18px;
+  white-space: nowrap;
+  color: #34A854;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-4 .passengers-counts-4 .down-passsengers-4 {
+  flex-shrink: 0;
+  width: 51px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 4px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-4 .passengers-counts-4 .down-passsengers-4 .red-arrow-4 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-4 .passengers-counts-4 .down-passsengers-4 .text-9 {
+  flex-shrink: 0;
+  width: 23px;
+  height: 18px;
+  white-space: nowrap;
+  color: #CA0909;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .line-75 {
+  flex-shrink: 0;
+  width: 40px;
+  height: 10px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-5 {
+  flex-shrink: 0;
+  width: 105px;
+  height: 138px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 12px;
+  column-gap: 12px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-5 .prince-anw {
+  flex-shrink: 0;
+  width: 120px;
+  height: 20px;
+  min-width: 120px;
+  min-height: 13px;
+  max-width: 120px;
+  max-height: 20px;
+  color: #656565;
+  font-family: "Open Sans";
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-5 .icon-5 {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-5 .passengers-counts-5 {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 105px;
+  height: 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 6px;
+  column-gap: 6px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-5 .passengers-counts-5 .up-passsengers-5 {
+  flex-shrink: 0;
+  width: 53px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 6px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-5 .passengers-counts-5 .up-passsengers-5 .green-arrow-5 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-5 .passengers-counts-5 .up-passsengers-5 .text-10 {
+  flex-shrink: 0;
+  width: 23px;
+  height: 18px;
+  white-space: nowrap;
+  color: #34A854;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-5 .passengers-counts-5 .down-passsengers-5 {
+  flex-shrink: 0;
+  width: 51px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 4px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-5 .passengers-counts-5 .down-passsengers-5 .red-arrow-5 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-5 .passengers-counts-5 .down-passsengers-5 .text-11 {
+  flex-shrink: 0;
+  width: 23px;
+  height: 18px;
+  white-space: nowrap;
+  color: #CA0909;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .line-74 {
+  flex-shrink: 0;
+  width: 40px;
+  height: 10px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-6 {
+  flex-shrink: 0;
+  width: 105px;
+  height: 138px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 12px;
+  column-gap: 12px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-6 .kalighat {
+  flex-shrink: 0;
+  width: 105px;
+  height: 20px;
+  min-width: 105px;
+  min-height: 20px;
+  color: #656565;
+  font-family: "Open Sans";
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-6 .icon-6 {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-6 .passengers-counts-6 {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 105px;
+  height: 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 6px;
+  column-gap: 6px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-6 .passengers-counts-6 .up-passsengers-6 {
+  flex-shrink: 0;
+  width: 53px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 6px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-6 .passengers-counts-6 .up-passsengers-6 .green-arrow-6 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-6 .passengers-counts-6 .up-passsengers-6 .text-12 {
+  flex-shrink: 0;
+  width: 23px;
+  height: 18px;
+  white-space: nowrap;
+  color: #34A854;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-6 .passengers-counts-6 .down-passsengers-6 {
+  flex-shrink: 0;
+  width: 51px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 4px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-6 .passengers-counts-6 .down-passsengers-6 .red-arrow-6 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.dashboard .dashboard-content .route-container .route-steps-1 .step-6 .passengers-counts-6 .down-passsengers-6 .text-13 {
+  flex-shrink: 0;
+  width: 23px;
+  height: 18px;
+  white-space: nowrap;
+  color: #CA0909;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .connector-3 {
+  flex-shrink: 0;
+  width: 30px;
+  height: 186px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 {
+  flex-shrink: 0;
+  width: 1215px;
+  height: 186px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  column-gap: 20px;
+  row-gap: 0px;
+  padding: 24px 0px 24px 0px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-7 {
+  flex-shrink: 0;
+  width: 105px;
+  height: 136px;
+  min-width: 105px;
+  min-height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 8px;
+  column-gap: 8px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-7 .park-street {
+  flex-shrink: 0;
+  width: 102px;
+  height: 24px;
+  white-space: nowrap;
+  color: #656565;
+  font-family: "Open Sans";
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-7 .icon-7 {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-7 .passengers-counts-7 {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 105px;
+  height: 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 6px;
+  column-gap: 6px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-7 .passengers-counts-7 .up-passsengers-7 {
+  flex-shrink: 0;
+  width: 53px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 6px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-7 .passengers-counts-7 .up-passsengers-7 .green-arrow-7 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-7 .passengers-counts-7 .up-passsengers-7 .text-15 {
+  flex-shrink: 0;
+  width: 23px;
+  height: 18px;
+  white-space: nowrap;
+  color: #34A854;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-7 .passengers-counts-7 .down-passsengers-7 {
+  flex-shrink: 0;
+  width: 51px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 4px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-7 .passengers-counts-7 .down-passsengers-7 .red-arrow-7 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-7 .passengers-counts-7 .down-passsengers-7 .text-16 {
+  flex-shrink: 0;
+  width: 23px;
+  height: 18px;
+  white-space: nowrap;
+  color: #CA0909;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .line-80 {
+  flex-shrink: 0;
+  width: 40px;
+  height: 10px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-8 {
+  flex-shrink: 0;
+  width: 105px;
+  height: 136px;
+  min-width: 105px;
+  min-height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 8px;
+  column-gap: 8px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-8 .maidan {
+  flex-shrink: 0;
+  width: 68px;
+  height: 24px;
+  white-space: nowrap;
+  color: #656565;
+  font-family: "Open Sans";
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-8 .icon-8 {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-8 .passengers-counts-8 {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 105px;
+  height: 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 6px;
+  column-gap: 6px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-8 .passengers-counts-8 .up-passsengers-8 {
+  flex-shrink: 0;
+  width: 53px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 6px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-8 .passengers-counts-8 .up-passsengers-8 .green-arrow-8 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-8 .passengers-counts-8 .up-passsengers-8 .text-17 {
+  flex-shrink: 0;
+  width: 23px;
+  height: 18px;
+  white-space: nowrap;
+  color: #34A854;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-8 .passengers-counts-8 .down-passsengers-8 {
+  flex-shrink: 0;
+  width: 51px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 4px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-8 .passengers-counts-8 .down-passsengers-8 .red-arrow-8 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-8 .passengers-counts-8 .down-passsengers-8 .text-18 {
+  flex-shrink: 0;
+  width: 23px;
+  height: 18px;
+  white-space: nowrap;
+  color: #CA0909;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .line-81 {
+  flex-shrink: 0;
+  width: 40px;
+  height: 10px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-9 {
+  flex-shrink: 0;
+  width: 105px;
+  height: 136px;
+  min-width: 105px;
+  min-height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 8px;
+  column-gap: 8px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-9 .chowringee {
+  flex-shrink: 0;
+  width: 107px;
+  height: 24px;
+  white-space: nowrap;
+  color: #656565;
+  font-family: "Open Sans";
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-9 .icon-9 {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-9 .passengers-counts-9 {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 105px;
+  height: 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 6px;
+  column-gap: 6px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-9 .passengers-counts-9 .up-passsengers-9 {
+  flex-shrink: 0;
+  width: 53px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 6px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-9 .passengers-counts-9 .up-passsengers-9 .green-arrow-9 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-9 .passengers-counts-9 .up-passsengers-9 .text-19 {
+  flex-shrink: 0;
+  width: 23px;
+  height: 18px;
+  white-space: nowrap;
+  color: #34A854;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-9 .passengers-counts-9 .down-passsengers-9 {
+  flex-shrink: 0;
+  width: 51px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 4px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-9 .passengers-counts-9 .down-passsengers-9 .red-arrow-9 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-9 .passengers-counts-9 .down-passsengers-9 .text-20 {
+  flex-shrink: 0;
+  width: 23px;
+  height: 18px;
+  white-space: nowrap;
+  color: #CA0909;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .line-82 {
+  flex-shrink: 0;
+  width: 40px;
+  height: 10px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-10 {
+  flex-shrink: 0;
+  width: 105px;
+  height: 136px;
+  min-width: 105px;
+  min-height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 8px;
+  column-gap: 8px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-10 .elgin-road {
+  flex-shrink: 0;
+  width: 94px;
+  height: 24px;
+  white-space: nowrap;
+  color: #656565;
+  font-family: "Open Sans";
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-10 .icon-10 {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-10 .passengers-counts-10 {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 105px;
+  height: 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 6px;
+  column-gap: 6px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-10 .passengers-counts-10 .up-passsengers-10 {
+  flex-shrink: 0;
+  width: 53px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 6px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-10 .passengers-counts-10 .up-passsengers-10 .green-arrow-10 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-10 .passengers-counts-10 .up-passsengers-10 .text-21 {
+  flex-shrink: 0;
+  width: 23px;
+  height: 18px;
+  white-space: nowrap;
+  color: #34A854;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-10 .passengers-counts-10 .down-passsengers-10 {
+  flex-shrink: 0;
+  width: 51px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 4px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-10 .passengers-counts-10 .down-passsengers-10 .red-arrow-10 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-10 .passengers-counts-10 .down-passsengers-10 .text-22 {
+  flex-shrink: 0;
+  width: 23px;
+  height: 18px;
+  white-space: nowrap;
+  color: #CA0909;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .line-83 {
+  flex-shrink: 0;
+  width: 40px;
+  height: 10px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-11 {
+  flex-shrink: 0;
+  width: 105px;
+  height: 138px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 12px;
+  column-gap: 12px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-11 .netaji-bha {
+  flex-shrink: 0;
+  width: 105px;
+  height: 20px;
+  min-width: 105px;
+  min-height: 20px;
+  color: #656565;
+  font-family: "Open Sans";
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-11 .icon-11 {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-11 .passengers-counts-11 {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 105px;
+  height: 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 6px;
+  column-gap: 6px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-11 .passengers-counts-11 .up-passsengers-11 {
+  flex-shrink: 0;
+  width: 53px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 6px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-11 .passengers-counts-11 .up-passsengers-11 .green-arrow-11 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-11 .passengers-counts-11 .up-passsengers-11 .text-23 {
+  flex-shrink: 0;
+  width: 23px;
+  height: 18px;
+  white-space: nowrap;
+  color: #34A854;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-11 .passengers-counts-11 .down-passsengers-11 {
+  flex-shrink: 0;
+  width: 51px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 4px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-11 .passengers-counts-11 .down-passsengers-11 .red-arrow-11 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-11 .passengers-counts-11 .down-passsengers-11 .text-24 {
+  flex-shrink: 0;
+  width: 23px;
+  height: 18px;
+  white-space: nowrap;
+  color: #CA0909;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .line-84 {
+  flex-shrink: 0;
+  width: 40px;
+  height: 10px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-12 {
+  flex-shrink: 0;
+  width: 105px;
+  height: 138px;
+  min-width: 105px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 12px;
+  column-gap: 12px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-12 .jatin-das-p {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 105px;
+  height: 20px;
+  min-width: 105px;
+  min-height: 20px;
+  color: #656565;
+  font-family: "Open Sans";
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-12 .icon-12 {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-12 .passengers-counts-12 {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 105px;
+  height: 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 6px;
+  column-gap: 6px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-12 .passengers-counts-12 .up-passsengers-12 {
+  flex-shrink: 0;
+  width: 53px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 6px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-12 .passengers-counts-12 .up-passsengers-12 .green-arrow-12 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-12 .passengers-counts-12 .up-passsengers-12 .text-25 {
+  flex-shrink: 0;
+  width: 23px;
+  height: 18px;
+  white-space: nowrap;
+  color: #34A854;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-12 .passengers-counts-12 .down-passsengers-12 {
+  flex-shrink: 0;
+  width: 51px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 4px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-12 .passengers-counts-12 .down-passsengers-12 .red-arrow-12 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-12 .passengers-counts-12 .down-passsengers-12 .text-26 {
+  flex-shrink: 0;
+  width: 23px;
+  height: 18px;
+  white-space: nowrap;
+  color: #CA0909;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .line-85 {
+  flex-shrink: 0;
+  width: 40px;
+  height: 10px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-13 {
+  flex-shrink: 0;
+  width: 105px;
+  height: 138px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 12px;
+  column-gap: 12px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-13 .hazra-more {
+  flex-shrink: 0;
+  width: 105px;
+  height: 20px;
+  min-width: 105px;
+  min-height: 20px;
+  color: #656565;
+  font-family: "Open Sans";
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-13 .icon-13 {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-13 .passengers-counts-13 {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 105px;
+  height: 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 6px;
+  column-gap: 6px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-13 .passengers-counts-13 .up-passsengers-13 {
+  flex-shrink: 0;
+  width: 53px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 6px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-13 .passengers-counts-13 .up-passsengers-13 .green-arrow-13 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-13 .passengers-counts-13 .up-passsengers-13 .text-27 {
+  flex-shrink: 0;
+  width: 23px;
+  height: 18px;
+  white-space: nowrap;
+  color: #34A854;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-13 .passengers-counts-13 .down-passsengers-13 {
+  flex-shrink: 0;
+  width: 51px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 4px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-13 .passengers-counts-13 .down-passsengers-13 .red-arrow-13 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.dashboard .dashboard-content .route-container .route-steps-2 .step-13 .passengers-counts-13 .down-passsengers-13 .text-28 {
+  flex-shrink: 0;
+  width: 23px;
+  height: 18px;
+  white-space: nowrap;
+  color: #CA0909;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 {
+  flex-shrink: 0;
+  width: 1215px;
+  height: 186px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  column-gap: 20px;
+  row-gap: 0px;
+  padding: 24px 0px 24px 0px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-14 {
+  flex-shrink: 0;
+  width: 105px;
+  height: 136px;
+  min-width: 105px;
+  min-height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 8px;
+  column-gap: 8px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-14 .rajbhawan {
+  flex-shrink: 0;
+  width: 101px;
+  height: 24px;
+  white-space: nowrap;
+  color: #656565;
+  font-family: "Open Sans";
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-14 .icon-14 {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-14 .passengers-counts-14 {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 105px;
+  height: 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 6px;
+  column-gap: 6px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-14 .passengers-counts-14 .up-passsengers-14 {
+  flex-shrink: 0;
+  width: 53px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 6px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-14 .passengers-counts-14 .up-passsengers-14 .green-arrow-14 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-14 .passengers-counts-14 .up-passsengers-14 .text-29 {
+  flex-shrink: 0;
+  width: 23px;
+  height: 18px;
+  white-space: nowrap;
+  color: #34A854;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-14 .passengers-counts-14 .down-passsengers-14 {
+  flex-shrink: 0;
+  width: 51px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 4px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-14 .passengers-counts-14 .down-passsengers-14 .red-arrow-14 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-14 .passengers-counts-14 .down-passsengers-14 .text-30 {
+  flex-shrink: 0;
+  width: 23px;
+  height: 18px;
+  white-space: nowrap;
+  color: #CA0909;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .line-86 {
+  flex-shrink: 0;
+  width: 40px;
+  height: 10px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-15 {
+  flex-shrink: 0;
+  width: 105px;
+  height: 136px;
+  min-width: 105px;
+  min-height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 8px;
+  column-gap: 8px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-15 .esplanade {
+  flex-shrink: 0;
+  width: 92px;
+  height: 24px;
+  white-space: nowrap;
+  color: #656565;
+  font-family: "Open Sans";
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-15 .icon-15 {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-15 .passengers-counts-15 {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 105px;
+  height: 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 6px;
+  column-gap: 6px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-15 .passengers-counts-15 .up-passsengers-15 {
+  flex-shrink: 0;
+  width: 53px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 6px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-15 .passengers-counts-15 .up-passsengers-15 .green-arrow-15 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-15 .passengers-counts-15 .up-passsengers-15 .text-31 {
+  flex-shrink: 0;
+  width: 23px;
+  height: 18px;
+  white-space: nowrap;
+  color: #34A854;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-15 .passengers-counts-15 .down-passsengers-15 {
+  flex-shrink: 0;
+  width: 51px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 4px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-15 .passengers-counts-15 .down-passsengers-15 .red-arrow-15 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-15 .passengers-counts-15 .down-passsengers-15 .text-32 {
+  flex-shrink: 0;
+  width: 23px;
+  height: 18px;
+  white-space: nowrap;
+  color: #CA0909;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .line-87 {
+  flex-shrink: 0;
+  width: 40px;
+  height: 10px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-16 {
+  flex-shrink: 0;
+  width: 105px;
+  height: 136px;
+  min-width: 105px;
+  min-height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 8px;
+  column-gap: 8px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-16 .bbd-bagh {
+  flex-shrink: 0;
+  width: 98px;
+  height: 24px;
+  white-space: nowrap;
+  color: #656565;
+  font-family: "Open Sans";
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-16 .icon-16 {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-16 .passengers-counts-16 {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 105px;
+  height: 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 6px;
+  column-gap: 6px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-16 .passengers-counts-16 .up-passsengers-16 {
+  flex-shrink: 0;
+  width: 53px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 6px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-16 .passengers-counts-16 .up-passsengers-16 .green-arrow-16 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-16 .passengers-counts-16 .up-passsengers-16 .text-33 {
+  flex-shrink: 0;
+  width: 23px;
+  height: 18px;
+  white-space: nowrap;
+  color: #34A854;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-16 .passengers-counts-16 .down-passsengers-16 {
+  flex-shrink: 0;
+  width: 51px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 4px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-16 .passengers-counts-16 .down-passsengers-16 .red-arrow-16 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-16 .passengers-counts-16 .down-passsengers-16 .text-34 {
+  flex-shrink: 0;
+  width: 23px;
+  height: 18px;
+  white-space: nowrap;
+  color: #CA0909;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .line-88 {
+  flex-shrink: 0;
+  width: 40px;
+  height: 10px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-17 {
+  flex-shrink: 0;
+  width: 105px;
+  height: 136px;
+  min-width: 105px;
+  min-height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 8px;
+  column-gap: 8px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-17 .gpo {
+  flex-shrink: 0;
+  width: 49px;
+  height: 24px;
+  white-space: nowrap;
+  color: #656565;
+  font-family: "Open Sans";
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-17 .icon-17 {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-17 .passengers-counts-17 {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 105px;
+  height: 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 6px;
+  column-gap: 6px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-17 .passengers-counts-17 .up-passsengers-17 {
+  flex-shrink: 0;
+  width: 53px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 6px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-17 .passengers-counts-17 .up-passsengers-17 .green-arrow-17 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-17 .passengers-counts-17 .up-passsengers-17 .text-35 {
+  flex-shrink: 0;
+  width: 23px;
+  height: 18px;
+  white-space: nowrap;
+  color: #34A854;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-17 .passengers-counts-17 .down-passsengers-17 {
+  flex-shrink: 0;
+  width: 51px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 4px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-17 .passengers-counts-17 .down-passsengers-17 .red-arrow-17 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-17 .passengers-counts-17 .down-passsengers-17 .text-36 {
+  flex-shrink: 0;
+  width: 23px;
+  height: 18px;
+  white-space: nowrap;
+  color: #CA0909;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .line-89 {
+  flex-shrink: 0;
+  width: 40px;
+  height: 10px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-18 {
+  flex-shrink: 0;
+  width: 105px;
+  height: 138px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 12px;
+  column-gap: 12px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-18 .canning-st {
+  flex-shrink: 0;
+  width: 105px;
+  height: 20px;
+  min-width: 105px;
+  min-height: 20px;
+  color: #656565;
+  font-family: "Open Sans";
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-18 .icon-18 {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-18 .passengers-counts-18 {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 105px;
+  height: 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 6px;
+  column-gap: 6px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-18 .passengers-counts-18 .up-passsengers-18 {
+  flex-shrink: 0;
+  width: 53px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 6px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-18 .passengers-counts-18 .up-passsengers-18 .green-arrow-18 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-18 .passengers-counts-18 .up-passsengers-18 .text-37 {
+  flex-shrink: 0;
+  width: 23px;
+  height: 18px;
+  white-space: nowrap;
+  color: #34A854;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-18 .passengers-counts-18 .down-passsengers-18 {
+  flex-shrink: 0;
+  width: 51px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 4px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-18 .passengers-counts-18 .down-passsengers-18 .red-arrow-18 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-18 .passengers-counts-18 .down-passsengers-18 .text-38 {
+  flex-shrink: 0;
+  width: 23px;
+  height: 18px;
+  white-space: nowrap;
+  color: #CA0909;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .line-90 {
+  flex-shrink: 0;
+  width: 40px;
+  height: 10px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-19 {
+  flex-shrink: 0;
+  width: 105px;
+  height: 138px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 12px;
+  column-gap: 12px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-19 .bara-bazar {
+  flex-shrink: 0;
+  width: 105px;
+  height: 20px;
+  min-width: 105px;
+  min-height: 20px;
+  color: #656565;
+  font-family: "Open Sans";
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-19 .icon-19 {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-19 .passengers-counts-19 {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 105px;
+  height: 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 6px;
+  column-gap: 6px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-19 .passengers-counts-19 .up-passsengers-19 {
+  flex-shrink: 0;
+  width: 53px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 6px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-19 .passengers-counts-19 .up-passsengers-19 .green-arrow-19 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-19 .passengers-counts-19 .up-passsengers-19 .text-39 {
+  flex-shrink: 0;
+  width: 23px;
+  height: 18px;
+  white-space: nowrap;
+  color: #34A854;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-19 .passengers-counts-19 .down-passsengers-19 {
+  flex-shrink: 0;
+  width: 51px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 4px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-19 .passengers-counts-19 .down-passsengers-19 .red-arrow-19 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-19 .passengers-counts-19 .down-passsengers-19 .text-40 {
+  flex-shrink: 0;
+  width: 23px;
+  height: 18px;
+  white-space: nowrap;
+  color: #CA0909;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .line-91 {
+  flex-shrink: 0;
+  width: 40px;
+  height: 10px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-20 {
+  flex-shrink: 0;
+  width: 105px;
+  height: 138px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 12px;
+  column-gap: 12px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-20 .howrah {
+  flex-shrink: 0;
+  width: 105px;
+  height: 20px;
+  min-width: 105px;
+  min-height: 20px;
+  color: #656565;
+  font-family: "Open Sans";
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-20 .icon-20 {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-20 .passengers-counts-20 {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 105px;
+  height: 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 6px;
+  column-gap: 6px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-20 .passengers-counts-20 .up-passsengers-20 {
+  flex-shrink: 0;
+  width: 53px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 6px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-20 .passengers-counts-20 .up-passsengers-20 .green-arrow-20 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-20 .passengers-counts-20 .up-passsengers-20 .text-1 {
+  flex-shrink: 0;
+  width: 23px;
+  height: 18px;
+  white-space: nowrap;
+  color: #34A854;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-20 .passengers-counts-20 .down-passsengers-20 {
+  flex-shrink: 0;
+  width: 51px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 4px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-20 .passengers-counts-20 .down-passsengers-20 .red-arrow-20 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.dashboard .dashboard-content .route-container .route-steps-3 .step-20 .passengers-counts-20 .down-passsengers-20 .text-41 {
+  flex-shrink: 0;
+  width: 23px;
+  height: 18px;
+  white-space: nowrap;
+  color: #CA0909;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.dashboard .dashboard-content .bottom-cards {
+  flex-shrink: 0;
+  width: 1320px;
+  height: 269px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  column-gap: 28px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data {
+  flex-shrink: 0;
+  width: 569px;
+  height: 266px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 15px;
+  column-gap: 15px;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .data-of-the-week {
+  flex-shrink: 0;
+  width: 207px;
+  height: 24px;
+  white-space: nowrap;
+  color: #9E9E9E;
+  font-family: "Open Sans";
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics {
+  flex-shrink: 0;
+  width: 569px;
+  height: 227px;
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  row-gap: 16px;
+  column-gap: 16px;
+  padding: 16px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid #545357;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .title {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 537px;
+  height: 31px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  row-gap: 0px;
+  padding: 2px;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .title .text-2025 {
+  flex-shrink: 0;
+  width: 46px;
+  height: 24px;
+  white-space: nowrap;
+  color: #545357;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .title .total-sales {
+  flex-shrink: 0;
+  width: 249px;
+  height: 27px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 4px 8px 4px 8px;
+  border: 1px solid #9E9E9E;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .title .total-sales .todays-total-sales-rs-2100 {
+  flex-shrink: 0;
+  width: 233px;
+  height: 19px;
+  white-space: nowrap;
+  color: #4C4545;
+  font-family: "Inter";
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  text-align: right;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .title .total-sales .todays-total-sales-rs-2100 > div {
+  width: 100%;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .title .total-sales .todays-total-sales-rs-2100 > div span:nth-child(2) {
+  color: #6A54EE;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .month {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 537px;
+  height: 28px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  column-gap: 8px;
+  row-gap: 0px;
+  overflow: hidden;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .month .month-1 {
+  flex-shrink: 0;
+  width: 48px;
+  height: 28px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+  padding: 4px 8px 4px 8px;
+  overflow: hidden;
+  background: #FFFFFF;
+  border: 1px solid #9E9E9E;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .month .month-1 .jan {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 32px;
+  height: 20px;
+  color: #91929F;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .month .month-2 {
+  flex-shrink: 0;
+  width: 48px;
+  height: 28px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+  padding: 4px 8px 4px 8px;
+  overflow: hidden;
+  background: #FFFFFF;
+  border: 1px solid #9E9E9E;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .month .month-2 .feb {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 32px;
+  height: 20px;
+  color: #91929F;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .month .month-3 {
+  flex-shrink: 0;
+  width: 48px;
+  height: 28px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+  padding: 4px 8px 4px 8px;
+  overflow: hidden;
+  background: #FFFFFF;
+  border: 1px solid #9E9E9E;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .month .month-3 .mar {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 32px;
+  height: 20px;
+  color: #91929F;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .month .month-4 {
+  flex-shrink: 0;
+  width: 48px;
+  height: 28px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+  padding: 4px 8px 4px 8px;
+  overflow: hidden;
+  background: #FFFFFF;
+  border: 1px solid #9E9E9E;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .month .month-4 .apr {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 32px;
+  height: 20px;
+  color: #91929F;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .month .month-5 {
+  flex-shrink: 0;
+  width: 48px;
+  height: 28px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+  padding: 4px 8px 4px 8px;
+  overflow: hidden;
+  background: #FFFFFF;
+  border: 1px solid #9E9E9E;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .month .month-5 .may {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 32px;
+  height: 20px;
+  color: #91929F;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .month .month-6 {
+  flex-shrink: 0;
+  width: 48px;
+  height: 28px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+  padding: 4px 8px 4px 8px;
+  overflow: hidden;
+  background: #D9DFFF;
+  border: 1px solid #907EFF;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .month .month-6 .jun {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 32px;
+  height: 20px;
+  color: #907EFF;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .month .cover {
+  position: absolute;
+  top: 0%;
+  right: 0px;
+  bottom: 0%;
+  width: 16px;
+  height: 28px;
+  overflow: hidden;
+  background: linear-gradient(270deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .line {
+  flex-shrink: 0;
+  width: 537px;
+  height: 7px;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .content {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 537px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .content .date {
+  flex-shrink: 0;
+  width: 38px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  column-gap: -3px;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .content .date > *:not(:first-child) {
+  margin-top: -3px;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .content .date .info {
+  flex-shrink: 0;
+  width: 36px;
+  height: 57px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+  padding: 5px 0px 5px 0px;
+  overflow: hidden;
+  background: #F7F7F8;
+  border: 1px solid #9E9E9E;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .content .date .info .text-42 {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 36px;
+  height: 24px;
+  color: #26262C;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .content .date .info .sun {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 36px;
+  height: 16px;
+  color: #747483;
+  font-family: "Open Sans";
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .content .date .circle-17 {
+  flex-shrink: 0;
+  width: 6px;
+  height: 6px;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .content .date-1 {
+  flex-shrink: 0;
+  width: 38px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  column-gap: -3px;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .content .date-1 > *:not(:first-child) {
+  margin-top: -3px;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .content .date-1 .info-1 {
+  flex-shrink: 0;
+  width: 36px;
+  height: 57px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+  padding: 5px 0px 5px 0px;
+  overflow: hidden;
+  background: #F7F7F8;
+  border: 1px solid #9E9E9E;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .content .date-1 .info-1 .text-43 {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 36px;
+  height: 24px;
+  color: #26262C;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .content .date-1 .info-1 .mon {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 36px;
+  height: 16px;
+  color: #747483;
+  font-family: "Open Sans";
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .content .date-1 .circle-18 {
+  flex-shrink: 0;
+  width: 6px;
+  height: 6px;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .content .date-2 {
+  flex-shrink: 0;
+  width: 38px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  column-gap: -3px;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .content .date-2 > *:not(:first-child) {
+  margin-top: -3px;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .content .date-2 .text {
+  flex-shrink: 0;
+  width: 36px;
+  height: 57px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+  padding: 5px 0px 5px 0px;
+  overflow: hidden;
+  background: #F7F7F8;
+  border: 1px solid #9E9E9E;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .content .date-2 .text .text-44 {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 36px;
+  height: 24px;
+  color: #26262C;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .content .date-2 .text .tue {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 36px;
+  height: 16px;
+  color: #747483;
+  font-family: "Open Sans";
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .content .date-2 .circle-19 {
+  flex-shrink: 0;
+  width: 6px;
+  height: 6px;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .content .date-3 {
+  flex-shrink: 0;
+  width: 38px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  column-gap: -3px;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .content .date-3 > *:not(:first-child) {
+  margin-top: -3px;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .content .date-3 .text-2 {
+  flex-shrink: 0;
+  width: 36px;
+  height: 57px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+  padding: 5px 0px 5px 0px;
+  overflow: hidden;
+  background: #F7F7F8;
+  border: 1px solid #9E9E9E;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .content .date-3 .text-2 .text-45 {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 36px;
+  height: 24px;
+  color: #26262C;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .content .date-3 .text-2 .wed {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 36px;
+  height: 16px;
+  color: #747483;
+  font-family: "Open Sans";
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .content .date-3 .circle-20 {
+  flex-shrink: 0;
+  width: 6px;
+  height: 6px;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .content .date-4 {
+  flex-shrink: 0;
+  width: 38px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  column-gap: -3px;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .content .date-4 > *:not(:first-child) {
+  margin-top: -3px;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .content .date-4 .info-2 {
+  flex-shrink: 0;
+  width: 36px;
+  height: 57px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+  padding: 5px 0px 5px 0px;
+  overflow: hidden;
+  background: #F7F7F8;
+  border: 1px solid #9E9E9E;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .content .date-4 .info-2 .text-46 {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 36px;
+  height: 24px;
+  color: #26262C;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .content .date-4 .info-2 .thu {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 36px;
+  height: 16px;
+  color: #747483;
+  font-family: "Open Sans";
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .content .date-4 .circle-21 {
+  flex-shrink: 0;
+  width: 6px;
+  height: 6px;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .content .date-5 {
+  flex-shrink: 0;
+  width: 38px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  column-gap: -3px;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .content .date-5 > *:not(:first-child) {
+  margin-top: -3px;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .content .date-5 .info-3 {
+  flex-shrink: 0;
+  width: 36px;
+  height: 57px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+  padding: 5px 0px 5px 0px;
+  overflow: hidden;
+  background: #907EFF;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .content .date-5 .info-3 .text-47 {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 36px;
+  height: 24px;
+  color: #FFFFFF;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .content .date-5 .info-3 .fri {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 36px;
+  height: 16px;
+  color: #FFFFFF;
+  font-family: "Open Sans";
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .content .date-5 .mark {
+  flex-shrink: 0;
+  width: 16px;
+  height: 6px;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .content .date-6 {
+  flex-shrink: 0;
+  width: 38px;
+  height: 60px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  column-gap: -3px;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .content .date-6 > *:not(:first-child) {
+  margin-top: -3px;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .content .date-6 .text-3 {
+  flex-shrink: 0;
+  width: 36px;
+  height: 57px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+  padding: 5px 0px 5px 0px;
+  overflow: hidden;
+  background: #F7F7F8;
+  border: 1px solid #9E9E9E;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .content .date-6 .text-3 .text-48 {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 36px;
+  height: 24px;
+  color: #26262C;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .content .date-6 .text-3 .sat {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 36px;
+  height: 16px;
+  color: #747483;
+  font-family: "Open Sans";
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .content .date-6 .circle-23 {
+  flex-shrink: 0;
+  width: 6px;
+  height: 6px;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .dots {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 537px;
+  height: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 4px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .dots .dot {
+  flex-shrink: 0;
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+  background: #EEEEF0;
+  border: 1px solid #000000;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .dots .dot-1 {
+  flex-shrink: 0;
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+  background: #EEEEF0;
+  border: 1px solid #000000;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .dots .dot-2 {
+  flex-shrink: 0;
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+  background: #EEEEF0;
+  border: 1px solid #000000;
+}
+.dashboard .dashboard-content .bottom-cards .todays-data .todays-statistics .dots .dot-3 {
+  flex-shrink: 0;
+  width: 36px;
+  height: 4px;
+  border-radius: 4px;
+  background: #3578FF;
+}
+.dashboard .dashboard-content .bottom-cards .alart-card {
+  flex-shrink: 0;
+  width: 262px;
+  height: 269px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 18px;
+  column-gap: 18px;
+}
+.dashboard .dashboard-content .bottom-cards .alart-card .start-stop-alart {
+  flex-shrink: 0;
+  width: 189px;
+  height: 24px;
+  white-space: nowrap;
+  color: #9E9E9E;
+  font-family: "Open Sans";
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+.dashboard .dashboard-content .bottom-cards .alart-card .aleart-card {
+  flex-shrink: 0;
+  width: 262px;
+  height: 227px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 18px;
+  column-gap: 18px;
+  padding: 10px 16px 10px 16px;
+  border: 1px solid #545357;
+}
+.dashboard .dashboard-content .bottom-cards .alart-card .aleart-card .time {
+  flex-shrink: 0;
+  width: 230px;
+  height: 136px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+}
+.dashboard .dashboard-content .bottom-cards .alart-card .aleart-card .time .waiting-time {
+  flex-shrink: 0;
+  width: 110px;
+  height: 20px;
+  color: #545357;
+  font-family: "Open Sans";
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.dashboard .dashboard-content .bottom-cards .alart-card .aleart-card .time .time-remaing {
+  flex-shrink: 0;
+  width: 230px;
+  height: 81px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  column-gap: 16px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .bottom-cards .alart-card .aleart-card .time .time-remaing .minutes {
+  flex-shrink: 0;
+  width: 94px;
+  height: 81px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 10px;
+  column-gap: 10px;
+  padding: 10px;
+  border: 1px solid #907EFF;
+}
+.dashboard .dashboard-content .bottom-cards .alart-card .aleart-card .time .time-remaing .minutes .text-49 {
+  flex-shrink: 0;
+  width: 74px;
+  height: 61px;
+  color: #6A54EE;
+  font-family: "Open Sans";
+  font-size: 40px;
+  line-height: 20px;
+  font-weight: 600;
+  letter-spacing: 0.1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.dashboard .dashboard-content .bottom-cards .alart-card .aleart-card .time .time-remaing .dots-1 {
+  flex-shrink: 0;
+  width: 10px;
+  height: 47px;
+}
+.dashboard .dashboard-content .bottom-cards .alart-card .aleart-card .time .time-remaing .seconds {
+  flex-shrink: 0;
+  width: 94px;
+  height: 81px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 10px;
+  column-gap: 10px;
+  padding: 10px;
+  border: 1px solid #907EFF;
+}
+.dashboard .dashboard-content .bottom-cards .alart-card .aleart-card .time .time-remaing .seconds .text-50 {
+  flex-shrink: 0;
+  width: 74px;
+  height: 61px;
+  color: #6A54EE;
+  font-family: "Open Sans";
+  font-size: 40px;
+  line-height: 20px;
+  font-weight: 600;
+  letter-spacing: 0.1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.dashboard .dashboard-content .bottom-cards .alart-card .aleart-card .time .sec--min {
+  flex-shrink: 0;
+  width: 197px;
+  height: 19px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  column-gap: 75px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .bottom-cards .alart-card .aleart-card .time .sec--min .minutes-1 {
+  flex-shrink: 0;
+  width: 61px;
+  height: 19px;
+  color: #545357;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.dashboard .dashboard-content .bottom-cards .alart-card .aleart-card .time .sec--min .seconds-1 {
+  flex-shrink: 0;
+  width: 61px;
+  height: 19px;
+  color: #545357;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.dashboard .dashboard-content .bottom-cards .alart-card .aleart-card .stop-button {
+  flex-shrink: 0;
+  width: 230px;
+  height: 40px;
+}
+.dashboard .dashboard-content .bottom-cards .alart-card .aleart-card .stop-button .aleart-button {
+  position: absolute;
+  top: calc(100% - 40px + 0px);
+  left: 0px;
+  width: 230px;
+  height: 40px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 68px 8px 68px;
+  background: #907EFF;
+}
+.dashboard .dashboard-content .bottom-cards .alart-card .aleart-card .stop-button .aleart-button .stop {
+  flex-shrink: 0;
+  width: 94px;
+  height: 24px;
+  color: #FFFFFF;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.dashboard .dashboard-content .bottom-cards .upcoming-stopage {
+  flex-shrink: 0;
+  width: 433px;
+  height: 268px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 16px;
+  column-gap: 16px;
+}
+.dashboard .dashboard-content .bottom-cards .upcoming-stopage .upcoming-stopage-details {
+  flex-shrink: 0;
+  width: 313px;
+  height: 24px;
+  white-space: nowrap;
+  color: #9E9E9E;
+  font-family: "Open Sans";
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+.dashboard .dashboard-content .bottom-cards .upcoming-stopage .upcoming-stop-details {
+  flex-shrink: 0;
+  width: 433px;
+  height: 228px;
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 15px;
+  column-gap: 15px;
+  padding: 24px 20px 24px 20px;
+  background: rgba(226, 226, 226, 0.6);
+  border: 1px solid #545357;
+}
+.dashboard .dashboard-content .bottom-cards .upcoming-stopage .upcoming-stop-details .upcoming-stop {
+  flex-shrink: 0;
+  width: 393px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  column-gap: 108px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .bottom-cards .upcoming-stopage .upcoming-stop-details .upcoming-stop .upcoming-stopage-1 {
+  flex-shrink: 0;
+  width: 181px;
+  height: 24px;
+  white-space: nowrap;
+  color: #656565;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.dashboard .dashboard-content .bottom-cards .upcoming-stopage .upcoming-stop-details .upcoming-stop .tallygunge-1 {
+  flex-shrink: 0;
+  width: 104px;
+  height: 24px;
+  white-space: nowrap;
+  color: #656565;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: right;
+}
+.dashboard .dashboard-content .bottom-cards .upcoming-stopage .upcoming-stop-details .scheduled-time {
+  flex-shrink: 0;
+  width: 393px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  column-gap: 178px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .bottom-cards .upcoming-stopage .upcoming-stop-details .scheduled-time .scheduled-time-1 {
+  flex-shrink: 0;
+  width: 153px;
+  height: 24px;
+  white-space: nowrap;
+  color: #656565;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.dashboard .dashboard-content .bottom-cards .upcoming-stopage .upcoming-stop-details .scheduled-time .text-815am {
+  flex-shrink: 0;
+  width: 62px;
+  height: 24px;
+  white-space: nowrap;
+  color: #6A54EE;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  text-align: right;
+}
+.dashboard .dashboard-content .bottom-cards .upcoming-stopage .upcoming-stop-details .scheduled-time .text-815am > div {
+  width: 100%;
+}
+.dashboard .dashboard-content .bottom-cards .upcoming-stopage .upcoming-stop-details .scheduled-time .text-815am > div span:nth-child(2) {
+  font-size: 14px;
+}
+.dashboard .dashboard-content .bottom-cards .upcoming-stopage .upcoming-stop-details .current-time {
+  flex-shrink: 0;
+  width: 393px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  column-gap: 203px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .bottom-cards .upcoming-stopage .upcoming-stop-details .current-time .current-time-1 {
+  flex-shrink: 0;
+  width: 128px;
+  height: 24px;
+  white-space: nowrap;
+  color: #656565;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.dashboard .dashboard-content .bottom-cards .upcoming-stopage .upcoming-stop-details .current-time .text-811am {
+  flex-shrink: 0;
+  width: 62px;
+  height: 24px;
+  white-space: nowrap;
+  color: #656565;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  text-align: right;
+}
+.dashboard .dashboard-content .bottom-cards .upcoming-stopage .upcoming-stop-details .current-time .text-811am > div {
+  width: 100%;
+}
+.dashboard .dashboard-content .bottom-cards .upcoming-stopage .upcoming-stop-details .current-time .text-811am > div span:nth-child(2) {
+  font-size: 14px;
+}
+.dashboard .dashboard-content .bottom-cards .upcoming-stopage .upcoming-stop-details .passengers-up {
+  flex-shrink: 0;
+  width: 393px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  column-gap: 141px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .bottom-cards .upcoming-stopage .upcoming-stop-details .passengers-up .passengers-onboarding {
+  flex-shrink: 0;
+  width: 229px;
+  height: 24px;
+  white-space: nowrap;
+  color: #656565;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.dashboard .dashboard-content .bottom-cards .upcoming-stopage .upcoming-stop-details .passengers-up .text-06 {
+  flex-shrink: 0;
+  width: 23px;
+  height: 24px;
+  white-space: nowrap;
+  color: #34A854;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: right;
+}
+.dashboard .dashboard-content .bottom-cards .upcoming-stopage .upcoming-stop-details .passengers-down {
+  flex-shrink: 0;
+  width: 393px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  column-gap: 186px;
+  row-gap: 0px;
+}
+.dashboard .dashboard-content .bottom-cards .upcoming-stopage .upcoming-stop-details .passengers-down .passengers-get-off {
+  flex-shrink: 0;
+  width: 184px;
+  height: 24px;
+  white-space: nowrap;
+  color: #656565;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.dashboard .dashboard-content .bottom-cards .upcoming-stopage .upcoming-stop-details .passengers-down .text-51 {
+  flex-shrink: 0;
+  width: 23px;
+  height: 24px;
+  white-space: nowrap;
+  color: #CA0909;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: right;
+}

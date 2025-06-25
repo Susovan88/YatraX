@@ -1,0 +1,354 @@
+.payment-confermation-page {
+  width: 402px;
+  height: 857px;
+  border-radius: 40px;
+  overflow: hidden;
+  background: #FFFFFF;
+}
+.payment-confermation-page .background-color-splash {
+  position: absolute;
+  top: -266px;
+  left: -8px;
+  width: 609px;
+  height: 602px;
+  background: radial-gradient(circle at 50% 50%, #c0ec4e 0%, rgba(216, 216, 216, 0) 100%);
+}
+.payment-confermation-page .confirmation-card {
+  position: absolute;
+  top: 116px;
+  left: 27px;
+  width: 344px;
+  height: 562px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  row-gap: 22px;
+  column-gap: 22px;
+  padding: 18px 10px 18px 10px;
+  background: #FFFFFF;
+  border: 1px solid #D9D9D9;
+}
+.payment-confermation-page .confirmation-card .confirmation-tick {
+  flex-shrink: 0;
+  width: 247px;
+  height: 243px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  row-gap: 8px;
+  column-gap: 8px;
+}
+.payment-confermation-page .confirmation-card .confirmation-tick .tick-icon {
+  flex-shrink: 0;
+  width: 175px;
+  height: 175px;
+}
+.payment-confermation-page .confirmation-card .confirmation-tick .thank-you-statement {
+  flex-shrink: 0;
+  width: 247px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+  row-gap: 12px;
+  column-gap: 12px;
+}
+.payment-confermation-page .confirmation-card .confirmation-tick .thank-you-statement .thank-you {
+  flex-shrink: 0;
+  width: 247px;
+  height: 24px;
+  color: #907EFF;
+  font-family: "Open Sans";
+  font-size: 32px;
+  line-height: 24px;
+  font-weight: 800;
+  text-align: center;
+}
+.payment-confermation-page .confirmation-card .confirmation-tick .thank-you-statement .payment-done-successfully {
+  flex-shrink: 0;
+  width: 246px;
+  height: 24px;
+  white-space: nowrap;
+  color: #5B5B5B;
+  font-family: "Open Sans";
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+.payment-confermation-page .confirmation-card .ticket-preview {
+  flex-shrink: 0;
+  width: 324px;
+  height: 187px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 15px;
+  column-gap: 15px;
+  padding: 20px;
+  overflow: hidden;
+  background: #FFFFFF;
+  border: 1px solid #91929F;
+}
+.payment-confermation-page .confirmation-card .ticket-preview .ticket-details {
+  flex-shrink: 0;
+  width: 284px;
+  height: 112px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 8px;
+  column-gap: 8px;
+}
+.payment-confermation-page .confirmation-card .ticket-preview .ticket-details .ticket-no {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 284px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  column-gap: 12px;
+  row-gap: 0px;
+}
+.payment-confermation-page .confirmation-card .ticket-preview .ticket-details .ticket-no .ticket-code {
+  flex-grow: 1;
+  width: 212px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.payment-confermation-page .confirmation-card .ticket-preview .ticket-details .ticket-no .ticket-code .ticket-no-1 {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 212px;
+  height: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #292929;
+  font-family: "D-DIN";
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+}
+.payment-confermation-page .confirmation-card .ticket-preview .ticket-details .ticket-no .ticket-code .text-123456789 {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 212px;
+  height: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #292929;
+  font-family: "D-DIN";
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+}
+.payment-confermation-page .confirmation-card .ticket-preview .ticket-details .ticket-no .ticket-price {
+  flex-shrink: 0;
+  width: 60px;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  column-gap: 4px;
+  row-gap: 0px;
+}
+.payment-confermation-page .confirmation-card .ticket-preview .ticket-details .ticket-no .ticket-price .rs-3000 {
+  flex-shrink: 0;
+  width: 60px;
+  height: 20px;
+  white-space: nowrap;
+  color: #292929;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+.payment-confermation-page .confirmation-card .ticket-preview .ticket-details .line-63 {
+  flex-shrink: 0;
+  width: 284px;
+  height: 8px;
+}
+.payment-confermation-page .confirmation-card .ticket-preview .ticket-details .summery {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 284px;
+  height: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 4px;
+  column-gap: 4px;
+}
+.payment-confermation-page .confirmation-card .ticket-preview .ticket-details .summery .information {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 284px;
+  height: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  row-gap: 0px;
+}
+.payment-confermation-page .confirmation-card .ticket-preview .ticket-details .summery .information .date {
+  flex-shrink: 0;
+  width: 27px;
+  height: 16px;
+  white-space: nowrap;
+  color: #464646;
+  font-family: "Open Sans";
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+.payment-confermation-page .confirmation-card .ticket-preview .ticket-details .summery .information .june-30-2025 {
+  flex-shrink: 0;
+  width: 76px;
+  height: 16px;
+  white-space: nowrap;
+  color: #464646;
+  font-family: "Open Sans";
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  text-align: right;
+}
+.payment-confermation-page .confirmation-card .ticket-preview .ticket-details .summery .information-1 {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 284px;
+  height: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  row-gap: 0px;
+}
+.payment-confermation-page .confirmation-card .ticket-preview .ticket-details .summery .information-1 .booking-time {
+  flex-shrink: 0;
+  width: 77px;
+  height: 16px;
+  white-space: nowrap;
+  color: #464646;
+  font-family: "Open Sans";
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+.payment-confermation-page .confirmation-card .ticket-preview .ticket-details .summery .information-1 .text-0750-am {
+  flex-shrink: 0;
+  width: 53px;
+  height: 16px;
+  white-space: nowrap;
+  color: #464646;
+  font-family: "Open Sans";
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  text-align: right;
+}
+.payment-confermation-page .confirmation-card .ticket-preview .ticket-details .summery .information-2 {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 284px;
+  height: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  row-gap: 0px;
+}
+.payment-confermation-page .confirmation-card .ticket-preview .ticket-details .summery .information-2 .passenger {
+  flex-shrink: 0;
+  width: 58px;
+  height: 16px;
+  white-space: nowrap;
+  color: #464646;
+  font-family: "Open Sans";
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+.payment-confermation-page .confirmation-card .ticket-preview .ticket-details .summery .information-2 .text-2-persons {
+  flex-shrink: 0;
+  width: 55px;
+  height: 16px;
+  white-space: nowrap;
+  color: #464646;
+  font-family: "Open Sans";
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  text-align: right;
+}
+.payment-confermation-page .confirmation-card .ticket-preview .ride-name--no {
+  flex-shrink: 0;
+  width: 284px;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  row-gap: 0px;
+}
+.payment-confermation-page .confirmation-card .ticket-preview .ride-name--no .s-112-naktala-howrah {
+  flex-shrink: 0;
+  width: 166px;
+  height: 20px;
+  white-space: nowrap;
+  color: #4C4C57;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+.payment-confermation-page .confirmation-card .ticket-preview .ride-name--no .wb-05-2922 {
+  flex-shrink: 0;
+  width: 79px;
+  height: 20px;
+  white-space: nowrap;
+  color: #4C4C57;
+  font-family: "D-DIN";
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+}
+.payment-confermation-page .confirmation-card .button {
+  flex-shrink: 0;
+  width: 324px;
+  height: 52px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 16px 135px 16px 135px;
+  background: #030318;
+}
+.payment-confermation-page .confirmation-card .button .home {
+  flex-shrink: 0;
+  width: 54px;
+  height: 20px;
+  white-space: nowrap;
+  color: #F1F1F1;
+  font-family: "Open Sans";
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+}
