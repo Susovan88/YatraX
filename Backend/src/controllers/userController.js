@@ -129,7 +129,7 @@ export const logOut=async (req, res) => {
   try {
         
     BacklistToken.create({
-      token: req.cookies.authToken, // Store the token in blacklist
+      token: req.authToken, // Store the token in blacklist
       createdAt: new Date()
     });
     res.clearCookie('authToken'); // Clear the auth token cookie

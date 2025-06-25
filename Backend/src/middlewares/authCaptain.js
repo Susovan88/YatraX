@@ -1,8 +1,10 @@
 import jwt from "jsonwebtoken";
-import User from "../models/userModel.js";
-import BacklistToken from "../models/backListTokenModel.js";
+import Captain from "../models/captainModel.js";
+import BlacklistToken from "../models/backListTokenModel.js";
 
-export const authUser = async (req, res, next) => {
+
+
+export const authCaptain = async (req, res, next) => {
   let token;
 
   // Check Authorization header first
@@ -22,19 +24,18 @@ export const authUser = async (req, res, next) => {
 
   console.log("Token from request:", token);
 
-  const isBackList=await BacklistToken.findOne({token});
-  if(isBackList){
+  const isBlackList = await BlacklistToken.findOne({ token });
+  if (isBlackList) {
     return res.status(401).json({ message: "Token is blacklisted." });
   }
 
   try {
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
-    req.user = await User.findById(decoded.userId);
-    req.authToken= token; // Store the token in the request object for later use
-    next();
+    req.captain = await Captain.findById(decoded.captainId);
+    req.authToken=token;
+    return next();
   } catch (err) {
     console.error("Token verification failed:", err);
     return res.status(401).json({ message: "Token is not valid" });
   }
-};
-
+};   

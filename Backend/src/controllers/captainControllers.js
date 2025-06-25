@@ -111,3 +111,41 @@ export const loginCaptain = async (req, res) => {
     res.status(500).json({ message: "Internal server error" });
   }
 };  
+
+export const getCaptainProfile = async (req, res) => {
+  try {
+    const captainId = req.captain._id;
+
+    // Find captain by ID
+    const captain = await Captain.findById(captainId).select('-password');
+    if (!captain) {
+      return res.status(404).json({ message: "Captain not found" });
+    }
+    res.status(200).json({
+      message: 'Captain profile retrieved successfully',
+      captain,
+    });
+  } catch (error) {
+    console.error("Profile retrieval error:", error);
+    res.status(500).json({ message: "Internal server error" });
+  } 
+}
+
+
+export const logoutCaptain = async (req, res) => {
+  try {
+    // Store the token in blacklist
+    await BacklistToken.create({
+      token: req.authToken,
+      createdAt: new Date()
+    });
+
+    // Clear the auth token cookie
+    res.clearCookie('authToken');
+
+    res.status(200).json({ message: "Logged out successfully" });
+  } catch (error) {
+    console.error("Logout error:", error);
+    res.status(500).json({ message: "Internal server error" });
+  }
+}

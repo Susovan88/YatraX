@@ -1,6 +1,7 @@
 import express from 'express';
 import { body, validationResult } from 'express-validator';
-import { loginCaptain, registerCaptain } from '../controllers/captainControllers.js';
+import { getCaptainProfile, loginCaptain, logoutCaptain, registerCaptain } from '../controllers/captainControllers.js';
+import { authCaptain } from '../middlewares/authCaptain.js';
 
 const captainRouter = express.Router();
 
@@ -47,6 +48,13 @@ captainRouter.post('/login',[
         .notEmpty().withMessage('Password is required')
         .isLength({ min: 8 }).withMessage('Password must be at least 8 characters long'),
 ],loginCaptain);
+
+
+captainRouter.get("/profile",authCaptain,getCaptainProfile);
+
+
+captainRouter.delete("/logout", authCaptain,logoutCaptain);
+
 
 
 

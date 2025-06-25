@@ -452,6 +452,113 @@ curl -X POST http://localhost:3000/api/captains/login \
   ```
 
 
+### `GET /api/captains/profile`
+
+Get the profile of the currently logged-in captain.  
+**This endpoint requires authentication using a JWT token.**
+
+#### Authentication
+
+- Send the JWT token in the `Authorization` header as a Bearer token:
+  ```
+  Authorization: Bearer <your_jwt_token>
+  ```
+- Or, if you are using cookies, the token will be read from the `authToken` cookie.
+
+#### Example Request
+
+```bash
+curl -X GET http://localhost:3000/api/captains/profile \
+  -H "Authorization: Bearer <your_jwt_token>"
+```
+
+#### Success Response
+
+- **Status:** `200 OK`
+- **Body:**
+  ```json
+  {
+    "message": "Captain profile retrieved successfully",
+    "captain": {
+      "_id": "captain_id_here",
+      "fullname": {
+        "firstname": "John",
+        "lastname": "Doe"
+      },
+      "email": "john.doe@example.com",
+      "vehicle": {
+        "color": "Red",
+        "plate": "ABC1234",
+        "capacity": 4,
+        "vehicleType": "car"
+      },
+      "status": "active",
+      "location": {
+        "ltd": 0.0,
+        "lng": 0.0
+      }
+    }
+  }
+  ```
+
+#### Error Responses
+
+- **Status:** `401 Unauthorized`
+  ```json
+  { "message": "No token, authorization denied" }
+  ```
+  or
+  ```json
+  { "message": "Token is not valid" }
+  ```
+
+- **Status:** `404 Not Found`
+  ```json
+  { "message": "Captain not found" }
+  ```
+
+---
+
+### `DELETE /api/captains/logout`
+
+Logs out the currently authenticated captain by blacklisting their token and clearing the auth cookie.  
+**Authentication required:** Yes
+
+#### Example Request
+
+```bash
+curl -X DELETE http://localhost:3000/api/captains/logout \
+  -H "Authorization: Bearer <your_jwt_token>"
+```
+
+#### Success Response
+
+- **Status:** `200 OK`
+- **Body:**
+  ```json
+  {
+    "message": "Logged out successfully"
+  }
+  ```
+
+#### Error Responses
+
+- **Status:** `401 Unauthorized`
+  ```json
+  { "message": "No token, authorization denied" }
+  ```
+  or
+  ```json
+  { "message": "Token is blacklisted." }
+  ```
+
+- **Status:** `500 Internal Server Error`
+  ```json
+  { "message": "Internal server error" }
+```
+
+
+
 ## Contributing
 
 Feel free to submit issues or pull requests for improvements or bug fixes. 
