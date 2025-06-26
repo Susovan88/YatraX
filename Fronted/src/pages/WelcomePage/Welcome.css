@@ -1,0 +1,152 @@
+.welcome-screen {
+  width: 402px;
+  height: 857px;
+  border-radius: 40px;
+  overflow: hidden;
+  background: #FFFFFF;
+}
+.welcome-screen .sb {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 509px;
+  height: 675px;
+  object-fit: cover;
+}
+.welcome-screen .btm-card {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 404px;
+  height: 330px;
+  border-radius: 40px 40px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 55px 39px 55px 39px;
+  background: #030318;
+}
+.welcome-screen .btm-card .btm-contant {
+  flex-shrink: 0;
+  width: 316px;
+  height: 206.38px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 72px 191px;
+}
+.welcome-screen .btm-card .btm-contant .starting-tagline {
+  flex-shrink: 0;
+  width: 316px;
+  height: 87px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 8px;
+  column-gap: 8px;
+}
+.welcome-screen .btm-card .btm-contant .starting-tagline .select-your-destination {
+  flex-shrink: 0;
+  width: 280px;
+  height: 33px;
+  white-space: nowrap;
+  color: #FFFFFF;
+  font-family: "Open Sans";
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 700;
+  text-align: center;
+}
+.welcome-screen .btm-card .btm-contant .starting-tagline .your-journey-begins-here-book-faster-travel-smarter-explore-beyond-limits {
+  flex-shrink: 0;
+  width: 316px;
+  height: 46px;
+  color: #9E9E9E;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 400;
+}
+.welcome-screen .btm-card .btm-contant .nav-dots {
+  flex-shrink: 0;
+  width: 54px;
+  height: 8px;
+}
+.welcome-screen .btm-card .btm-contant .next-button {
+  flex-shrink: 0;
+  width: 70.62px;
+  height: 47.38px;
+}
+
+@media (max-width: 600px) {
+  .welcome-screen {
+    width: 100vw;
+    height: 100vh;
+    min-width: 0;
+    min-height: 0;
+    border-radius: 0;
+    position: relative;
+    overflow: auto;
+  }
+  .welcome-screen .sb {
+    width: 100vw;
+    height: 55vh;
+    min-width: 0;
+    min-height: 0;
+    max-width: 100vw;
+    max-height: 60vh;
+    object-fit: cover;
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+  .welcome-screen .btm-card {
+    position: relative;
+    bottom: 0px;
+    left: 0;
+    width: 100vw;
+    /* height: auto; */
+    min-width: 0;
+    min-height: 0;
+    border-radius: 24px 24px 0 0;
+    padding: 24px 8vw 24px 8vw;
+    box-sizing: border-box;
+  }
+  .welcome-screen .btm-card .btm-contant {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px 0;
+  }
+  .welcome-screen .btm-card .btm-contant .starting-tagline {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    text-align: center;
+  }
+  .welcome-screen .btm-card .btm-contant .starting-tagline .select-your-destination {
+    width: 100%;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+  }
+  .welcome-screen .btm-card .btm-contant .starting-tagline .your-journey-begins-here-book-faster-travel-smarter-explore-beyond-limits {
+    width: 100%;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+  }
+  .welcome-screen .btm-card .btm-contant .nav-dots {
+    width: 60px;
+    height: 15px;
+  }
+  .welcome-screen .btm-card .btm-contant .next-button {
+    width: 56px;
+    height: 40px;
+  }
+}
