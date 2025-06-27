@@ -1,7 +1,10 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { FaArrowLeft } from "react-icons/fa";
 import TicketCard from "./TicketCard";
 
 const TicketsPage = () => {
+  const navigate = useNavigate();
   // Dummy ticket data (to be replaced with dynamic data from PaymentConfirmationPage)
   const [tickets] = useState([
     {
@@ -69,11 +72,22 @@ const TicketsPage = () => {
           borderRadius: "50%",
         }}
       />
-      <div className="w-full max-w-screen-md mx-auto z-10 relative">
-        {/* YatraX Header */}
-        <h1 className="text-3xl font-bold text-purple-700 mb-4 drop-shadow text-center">
+      {/* Header and Back Button container for mobile/desktop */}
+      <div className="absolute left-4 top-4 z-20 flex flex-col items-start sm:static sm:flex-row sm:items-center sm:gap-3 w-auto">
+        <button
+          onClick={() => navigate(-1)}
+          className="bg-[#907EFF] text-white rounded-lg p-2 font-semibold hover:bg-[#7a6ad6] transition flex items-center justify-center mb-2 sm:mb-0"
+          aria-label="Back"
+          style={{ boxShadow: "0 2px 8px #907EFF33" }}
+        >
+          <FaArrowLeft className="text-lg" />
+        </button>
+        <h1 className="text-3xl font-bold text-purple-700 drop-shadow text-left ml-0 sm:ml-2">
           YatraX
         </h1>
+      </div>
+      <div className="w-full max-w-screen-md mx-auto z-10 relative pt-20 sm:pt-0">
+        {/* pt-20 ensures content is pushed below header/back on mobile */}
         <h2 className="text-3xl font-extrabold text-[#4C4C57] mb-8 text-center">
           Your Tickets
         </h2>

@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { FaArrowLeft } from 'react-icons/fa';
 
 const SignUpPage = () => {
+  const navigate = useNavigate();
   const [form, setForm] = useState({ username: '', email: '', password: '', agree: false });
   const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
@@ -31,12 +34,35 @@ const SignUpPage = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden bg-white">
-      {/* Background Splash - improved color */}
-      <div className="absolute top-0 left-0 w-full h-1/3 z-0" style={{minHeight:'180px', background: 'radial-gradient(circle at 50% 50%, #c0ec4e 0%, rgba(216,216,216,0) 100%)'}}></div>
-      <div className="relative z-10 w-full max-w-md mx-auto px-4 py-8">
-        {/* Header */}
-        <h1 className="text-4xl font-bold text-gray-800 mb-8 text-center font-sans tracking-tight">YatraX</h1>
+    <div className="min-h-screen bg-[#F1F1F1] flex flex-col items-center py-8 px-2 relative overflow-hidden">
+      {/* Background Splash */}
+      <div
+        className="pointer-events-none select-none absolute z-0"
+        style={{
+          top: -266,
+          left: -8,
+          width: 609,
+          height: 602,
+          background:
+            "radial-gradient(circle at 50% 50%, #c0ec4e 0%, rgba(216,216,216,0) 100%)",
+          borderRadius: "50%",
+        }}
+      />
+      {/* Back Button absolutely positioned at the top over the background */}
+      <button
+        onClick={() => navigate(-1)}
+        className="bg-[#907EFF] text-white rounded-lg p-2 font-semibold hover:bg-[#7a6ad6] transition flex items-center justify-center absolute left-4 top-4 z-20"
+        aria-label="Back"
+        style={{ boxShadow: "0 2px 8px #907EFF33" }}
+      >
+        <FaArrowLeft className="text-lg" />
+      </button>
+      <div className="w-full max-w-md mx-auto px-4 py-8 bg-white rounded-2xl shadow-lg z-10 relative mt-6">
+        <div className="flex items-center gap-3 mb-4">
+          <h1 className="text-3xl font-bold text-purple-700 drop-shadow text-left ml-2">
+            YatraX
+          </h1>
+        </div>
         <form onSubmit={handleSubmit} className="bg-white rounded-2xl shadow-lg p-6 flex flex-col gap-6 border border-gray-200">
           {/* Inputs */}
           <div className="flex flex-col gap-4">

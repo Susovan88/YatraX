@@ -1,18 +1,42 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { FaArrowLeft } from "react-icons/fa";
 
 const HomePage = () => {
+  const navigate = useNavigate();
   const [locationUpdates, setLocationUpdates] = useState(false);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-lime-200 via-white to-purple-100 relative overflow-hidden">
-      {/* Background Splash - improved color and gradient */}
-      <div className="absolute top-[-180px] left-0 w-full h-[350px] blur-2xl bg-gradient-to-r from-lime-300 via-purple-200 to-transparent opacity-70 z-0"></div>
-
-      <div className="relative z-10 flex flex-col items-center px-2 py-4 max-w-xl mx-auto">
+    <div className="min-h-screen bg-[#F1F1F1] flex flex-col items-center py-8 px-2 relative overflow-hidden">
+      {/* Background Splash */}
+      <div
+        className="pointer-events-none select-none absolute z-0"
+        style={{
+          top: -266,
+          left: -8,
+          width: 609,
+          height: 602,
+          background:
+            "radial-gradient(circle at 50% 50%, #c0ec4e 0%, rgba(216,216,216,0) 100%)",
+          borderRadius: "50%",
+        }}
+      />
+      {/* Back Button absolutely positioned at the top over the background */}
+      <button
+        onClick={() => navigate(-1)}
+        className="bg-[#907EFF] text-white rounded-lg p-2 font-semibold hover:bg-[#7a6ad6] transition flex items-center justify-center absolute left-4 top-4 z-20"
+        aria-label="Back"
+        style={{ boxShadow: "0 2px 8px #907EFF33" }}
+      >
+        <FaArrowLeft className="text-lg" />
+      </button>
+      <div className="relative z-10 flex flex-col items-center px-2 py-4 max-w-xl mx-auto w-full">
         {/* Header */}
-        <h1 className="text-3xl font-bold text-purple-700 mb-4 drop-shadow">
-          YatraX
-        </h1>
+        <div className="flex items-center gap-3 mb-4 w-full">
+          <h1 className="text-3xl font-bold text-purple-700 drop-shadow text-left ml-2">
+            YatraX
+          </h1>
+        </div>
 
         {/* Location Toggle */}
         <div className="flex items-center justify-between w-full max-w-md bg-white/80 rounded-xl p-4 mb-4 shadow">

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 import LocationInput from "../SearchPage/LocationInput";
 import PassengerCounter from "./PassengerCounter";
@@ -26,6 +27,8 @@ const upiOptions = [
 ];
 
 const PaymentsPage = () => {
+  const navigate = useNavigate();
+
   // Location state
   const [fromLocation, setFromLocation] = useState("Garia Station");
   const [toLocation, setToLocation] = useState("Howrah Station");
@@ -41,8 +44,8 @@ const PaymentsPage = () => {
   const [selectedCard, setSelectedCard] = useState(false);
 
   return (
-    <div className="min-h-screen bg-[#F1F1F1] flex flex-col items-center justify-center py-6 px-2 relative overflow-hidden">
-      {/* Custom background splash */}
+    <div className="min-h-screen bg-[#F1F1F1] flex flex-col items-center py-8 px-2 relative overflow-hidden">
+      {/* Background Splash */}
       <div
         className="pointer-events-none select-none absolute z-0"
         style={{
@@ -55,16 +58,24 @@ const PaymentsPage = () => {
           borderRadius: "50%",
         }}
       />
-      <div className="w-full max-w-lg bg-white rounded-xl shadow-md p-4 md:p-8 flex flex-col gap-6 z-10 relative">
-        {/* Header */}
-        <div className="flex items-center gap-4 mb-2">
-          <button className="p-2 rounded-full bg-[#F1F1F1] text-[#907EFF] hover:bg-[#e0e0e0]">
-            <FaArrowLeft className="text-xl" />
-          </button>
-          <h2 className="text-xl font-bold text-gray-800 flex-1 text-center">
-            Payment Options
-          </h2>
+      {/* Back Button absolutely positioned at the top over the background */}
+      <button
+        onClick={() => navigate(-1)}
+        className="bg-[#907EFF] text-white rounded-lg p-2 font-semibold hover:bg-[#7a6ad6] transition flex items-center justify-center absolute left-4 top-4 z-20"
+        aria-label="Back"
+        style={{ boxShadow: "0 2px 8px #907EFF33" }}
+      >
+        <FaArrowLeft className="text-lg" />
+      </button>
+      <div className="w-full max-w-md mx-auto bg-white p-4 rounded-xl shadow-md mt-6 z-10 relative">
+        <div className="flex items-center gap-3 mb-4">
+          <h1 className="text-3xl font-bold text-purple-700 drop-shadow text-left ml-2">
+            YatraX
+          </h1>
         </div>
+        <h2 className="text-xl font-bold text-gray-800 flex-1 text-center mb-6">
+          Payment Options
+        </h2>
         {/* Locations */}
         <div className="flex flex-col md:flex-row md:gap-8 gap-4">
           <div className="flex-1 flex flex-col gap-2">
