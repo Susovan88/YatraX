@@ -10,6 +10,7 @@ import Ticket from './pages/TicketsPage/TicketsPage'
 import UserRoute from './pages/USerRoutes/UserRoutePage';
 import Profile from './pages/Profile/ProfilePage';
 import LoginPage from './Components/LoginPage';
+import Navbar from './Components/Navbar';
 import './App.css';
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <Route path='/user-route' element={<UserRoute/>}/>
         {/* Add more routes as needed */}
       </Routes>
+      <Navbar />
     </Router>
   );
 }
