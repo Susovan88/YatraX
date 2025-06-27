@@ -5,6 +5,7 @@ import HomePage from './Components/HomePage';
 import SignUp from './Components/SignUpPage';
 import SearchPage from './pages/SearchPage/SearchPage';
 import PaymentsPage from './pages/PaymentPage/PaymentsPage';
+import PaymentConfirm from './pages/PaymentConfirmationPage/PaymentConfirmationPage';
 import './App.css';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path='/home' element={<HomePage/>}/>
         <Route path='/search' element={<SearchPage/>}/>
         <Route path='/payments' element={<PaymentsPage />} />
+        <Route path='/payment-confirm' element={<PaymentConfirm />} />
         {/* Add more routes as needed */}
       </Routes>
     </Router>
