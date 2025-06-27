@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate, NavLink } from 'react-router-dom';
 import { FaArrowLeft, FaEye, FaEyeSlash } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 const LoginPage = () => {
   const navigate = useNavigate();
@@ -65,8 +66,8 @@ const LoginPage = () => {
         <form onSubmit={handleSubmit} className="bg-white rounded-2xl shadow-lg p-6 flex flex-col gap-6 border border-gray-200">
           {/* Inputs */}
           <div className="flex flex-col gap-4">
-            <div>
-              <input
+            <motion.div whileFocus={{ scale: 1.04, boxShadow: '0 0 0 2px #c0ec4e' }} whileHover={{ scale: 1.02 }}>
+              <motion.input
                 name="loginIdentifier"
                 value={form.loginIdentifier}
                 onChange={handleChange}
@@ -74,11 +75,14 @@ const LoginPage = () => {
                 className={`w-full px-4 py-3 rounded-lg border ${errors.loginIdentifier ? 'border-red-400' : 'border-gray-300'} focus:outline-none focus:border-purple-400 text-purple-700 placeholder-purple-400 bg-white transition`}
                 aria-label="Mobile Number or Email"
                 autoComplete="username"
+                as={motion.input}
+                whileFocus={{ scale: 1.04, boxShadow: '0 0 0 2px #c0ec4e' }}
+                whileHover={{ scale: 1.02 }}
               />
               {errors.loginIdentifier && <p className="text-red-500 text-xs mt-1">{errors.loginIdentifier}</p>}
-            </div>
-            <div className="relative">
-              <input
+            </motion.div>
+            <motion.div className="relative" whileFocus={{ scale: 1.04, boxShadow: '0 0 0 2px #c0ec4e' }} whileHover={{ scale: 1.02 }}>
+              <motion.input
                 name="password"
                 type={showPassword ? 'text' : 'password'}
                 value={form.password}
@@ -87,6 +91,9 @@ const LoginPage = () => {
                 className={`w-full px-4 py-3 rounded-lg border ${errors.password ? 'border-red-400' : 'border-gray-300'} focus:outline-none focus:border-purple-400 text-purple-700 placeholder-purple-400 bg-white transition pr-12`}
                 aria-label="Password"
                 autoComplete="current-password"
+                as={motion.input}
+                whileFocus={{ scale: 1.04, boxShadow: '0 0 0 2px #c0ec4e' }}
+                whileHover={{ scale: 1.02 }}
               />
               <button
                 type="button"
@@ -98,7 +105,7 @@ const LoginPage = () => {
                 {showPassword ? <FaEyeSlash /> : <FaEye />}
               </button>
               {errors.password && <p className="text-red-500 text-xs mt-1">{errors.password}</p>}
-            </div>
+            </motion.div>
           </div>
           {/* Submit Button */}
           <button

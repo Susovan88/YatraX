@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 import LocationInput from "../SearchPage/LocationInput";
 import PassengerCounter from "./PassengerCounter";
 import UPIOptions from "./UPIOptions";
 import CardOption from "./CardOption";
+import { motion } from "framer-motion";
 
 const upiOptions = [
   {
@@ -28,10 +29,15 @@ const upiOptions = [
 
 const PaymentsPage = () => {
   const navigate = useNavigate();
+  const location = useLocation();
 
   // Location state
-  const [fromLocation, setFromLocation] = useState("Garia Station");
-  const [toLocation, setToLocation] = useState("Howrah Station");
+  const [fromLocation, setFromLocation] = useState(
+    location.state?.fromLocation || "Garia Station"
+  );
+  const [toLocation, setToLocation] = useState(
+    location.state?.toLocation || "Howrah Station"
+  );
   const [focused, setFocused] = useState("from");
 
   // Passenger counter
@@ -78,7 +84,14 @@ const PaymentsPage = () => {
         </h2>
         {/* Locations */}
         <div className="flex flex-col md:flex-row md:gap-8 gap-4">
-          <div className="flex-1 flex flex-col gap-2">
+          <motion.div
+            whileFocus={{
+              scale: 1.04,
+              boxShadow: "0 0 0 2px #c0ec4e",
+            }}
+            whileHover={{ scale: 1.02 }}
+            className="flex-1"
+          >
             <LocationInput
               label="From"
               value={fromLocation}
@@ -86,8 +99,15 @@ const PaymentsPage = () => {
               onChange={(e) => setFromLocation(e.target.value)}
               isActive={focused === "from"}
             />
-          </div>
-          <div className="flex-1 flex flex-col gap-2">
+          </motion.div>
+          <motion.div
+            whileFocus={{
+              scale: 1.04,
+              boxShadow: "0 0 0 2px #c0ec4e",
+            }}
+            whileHover={{ scale: 1.02 }}
+            className="flex-1"
+          >
             <LocationInput
               label="To"
               value={toLocation}
@@ -95,7 +115,7 @@ const PaymentsPage = () => {
               onChange={(e) => setToLocation(e.target.value)}
               isActive={focused === "to"}
             />
-          </div>
+          </motion.div>
         </div>
         {/* Divider */}
         <hr className="my-2 border-t" />

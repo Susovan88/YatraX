@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate, NavLink } from 'react-router-dom';
 import { FaArrowLeft, FaEye, FaEyeSlash } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 const SignUpPage = () => {
   const navigate = useNavigate();
@@ -80,8 +81,8 @@ const SignUpPage = () => {
         <form onSubmit={handleSubmit} className="bg-white rounded-2xl shadow-lg p-6 flex flex-col gap-6 border border-gray-200">
           {/* Inputs */}
           <div className="flex flex-col gap-4">
-            <div>
-              <input
+            <motion.div whileFocus={{ scale: 1.04, boxShadow: '0 0 0 2px #c0ec4e' }} whileHover={{ scale: 1.02 }}>
+              <motion.input
                 name="name"
                 value={form.name}
                 onChange={handleChange}
@@ -89,11 +90,14 @@ const SignUpPage = () => {
                 className={`w-full px-4 py-3 rounded-lg border ${errors.name ? 'border-red-400' : 'border-gray-300'} focus:outline-none focus:border-purple-400 text-purple-700 placeholder-purple-400 bg-white transition`}
                 aria-label="Full Name"
                 autoComplete="name"
+                as={motion.input}
+                whileFocus={{ scale: 1.04, boxShadow: '0 0 0 2px #c0ec4e' }}
+                whileHover={{ scale: 1.02 }}
               />
               {errors.name && <p className="text-red-500 text-xs mt-1">{errors.name}</p>}
-            </div>
-            <div>
-              <input
+            </motion.div>
+            <motion.div whileFocus={{ scale: 1.04, boxShadow: '0 0 0 2px #c0ec4e' }} whileHover={{ scale: 1.02 }}>
+              <motion.input
                 name="username"
                 value={form.username}
                 onChange={handleChange}
@@ -101,11 +105,14 @@ const SignUpPage = () => {
                 className={`w-full px-4 py-3 rounded-lg border ${errors.username ? 'border-red-400' : 'border-gray-300'} focus:outline-none focus:border-purple-400 text-purple-700 placeholder-purple-400 bg-white transition`}
                 aria-label="Username"
                 autoComplete="username"
+                as={motion.input}
+                whileFocus={{ scale: 1.04, boxShadow: '0 0 0 2px #c0ec4e' }}
+                whileHover={{ scale: 1.02 }}
               />
               {errors.username && <p className="text-red-500 text-xs mt-1">{errors.username}</p>}
-            </div>
-            <div>
-              <input
+            </motion.div>
+            <motion.div whileFocus={{ scale: 1.04, boxShadow: '0 0 0 2px #c0ec4e' }} whileHover={{ scale: 1.02 }}>
+              <motion.input
                 name="email"
                 value={form.email}
                 onChange={handleChange}
@@ -113,11 +120,14 @@ const SignUpPage = () => {
                 className={`w-full px-4 py-3 rounded-lg border ${errors.email ? 'border-red-400' : 'border-gray-300'} focus:outline-none focus:border-purple-400 text-purple-700 placeholder-purple-400 bg-white transition`}
                 aria-label="Email"
                 autoComplete="email"
+                as={motion.input}
+                whileFocus={{ scale: 1.04, boxShadow: '0 0 0 2px #c0ec4e' }}
+                whileHover={{ scale: 1.02 }}
               />
               {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
-            </div>
-            <div>
-              <input
+            </motion.div>
+            <motion.div whileFocus={{ scale: 1.04, boxShadow: '0 0 0 2px #c0ec4e' }} whileHover={{ scale: 1.02 }}>
+              <motion.input
                 name="mobile"
                 value={form.mobile}
                 onChange={handleChange}
@@ -126,11 +136,14 @@ const SignUpPage = () => {
                 aria-label="Mobile Number"
                 autoComplete="tel"
                 maxLength={10}
+                as={motion.input}
+                whileFocus={{ scale: 1.04, boxShadow: '0 0 0 2px #c0ec4e' }}
+                whileHover={{ scale: 1.02 }}
               />
               {errors.mobile && <p className="text-red-500 text-xs mt-1">{errors.mobile}</p>}
-            </div>
-            <div className="relative">
-              <input
+            </motion.div>
+            <motion.div className="relative" whileFocus={{ scale: 1.04, boxShadow: '0 0 0 2px #c0ec4e' }} whileHover={{ scale: 1.02 }}>
+              <motion.input
                 name="password"
                 type={showPassword ? 'text' : 'password'}
                 value={form.password}
@@ -139,6 +152,9 @@ const SignUpPage = () => {
                 className={`w-full px-4 py-3 rounded-lg border ${errors.password ? 'border-red-400' : 'border-gray-300'} focus:outline-none focus:border-purple-400 text-purple-700 placeholder-purple-400 bg-white transition pr-12`}
                 aria-label="Password"
                 autoComplete="new-password"
+                as={motion.input}
+                whileFocus={{ scale: 1.04, boxShadow: '0 0 0 2px #c0ec4e' }}
+                whileHover={{ scale: 1.02 }}
               />
               <button
                 type="button"
@@ -150,9 +166,9 @@ const SignUpPage = () => {
                 {showPassword ? <FaEyeSlash /> : <FaEye />}
               </button>
               {errors.password && <p className="text-red-500 text-xs mt-1">{errors.password}</p>}
-            </div>
-            <div className="relative">
-              <input
+            </motion.div>
+            <motion.div className="relative" whileFocus={{ scale: 1.04, boxShadow: '0 0 0 2px #c0ec4e' }} whileHover={{ scale: 1.02 }}>
+              <motion.input
                 name="confirmPassword"
                 type={showConfirmPassword ? 'text' : 'password'}
                 value={form.confirmPassword}
@@ -161,6 +177,9 @@ const SignUpPage = () => {
                 className={`w-full px-4 py-3 rounded-lg border ${errors.confirmPassword ? 'border-red-400' : 'border-gray-300'} focus:outline-none focus:border-purple-400 text-purple-700 placeholder-purple-400 bg-white transition pr-12`}
                 aria-label="Confirm Password"
                 autoComplete="new-password"
+                as={motion.input}
+                whileFocus={{ scale: 1.04, boxShadow: '0 0 0 2px #c0ec4e' }}
+                whileHover={{ scale: 1.02 }}
               />
               <button
                 type="button"
@@ -172,7 +191,7 @@ const SignUpPage = () => {
                 {showConfirmPassword ? <FaEyeSlash /> : <FaEye />}
               </button>
               {errors.confirmPassword && <p className="text-red-500 text-xs mt-1">{errors.confirmPassword}</p>}
-            </div>
+            </motion.div>
           </div>
           {/* Checkbox */}
           <div className="flex items-center gap-2">

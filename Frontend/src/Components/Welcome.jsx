@@ -1,6 +1,10 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 const Welcome = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="min-h-screen w-full flex flex-col items-center justify-end bg-white relative overflow-hidden">
       {/* Background Splash - improved color, matches previous radial gradient */}
@@ -30,13 +34,21 @@ const Welcome = () => {
             <div className="h-2 w-2 rounded-full bg-[#5B5B5B] border border-white"></div>
           </div>
           {/* Next Button */}
-          <button className="w-[56px] h-[40px] rounded-[16px] bg-[#C0EC4E] flex flex-row justify-center items-center p-[5px_12px] shadow hover:scale-105 transition-transform duration-200">
-            <img
+          <motion.button
+            whileHover={{ scale: 1.15, rotate: 8, boxShadow: '0px 8px 24px rgba(192,236,78,0.3)' }}
+            whileTap={{ scale: 0.95 }}
+            className="w-[56px] h-[40px] rounded-[16px] bg-[#C0EC4E] flex flex-row justify-center items-center p-[5px_12px] shadow transition-transform duration-200"
+            onClick={() => navigate('/signup')}
+          >
+            <motion.img
               src="/public/ic-sharp-call-made.svg"
               alt="Next"
               className="w-6 h-6 object-contain font-bold"
+              initial={{ x: 0 }}
+              whileHover={{ x: 8 }}
+              transition={{ type: 'spring', stiffness: 300 }}
             />
-          </button>
+          </motion.button>
         </div>
       </div>
     </div>

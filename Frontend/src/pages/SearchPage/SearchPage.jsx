@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 import { FaPlus } from "react-icons/fa";
 import { MdSwapVert } from "react-icons/md";
+import { motion } from "framer-motion";
 import LocationInput from "./LocationInput";
 import AddLocationModal from "./AddLocationModal";
 import LocationList from "./LocationList";
@@ -53,6 +54,10 @@ const SearchPage = () => {
 		else setToLocation(loc.city);
 	};
 
+	const handleBookRide = () => {
+		navigate("/payments", { state: { fromLocation, toLocation } });
+	};
+
 	return (
 		<div className="min-h-screen bg-[#F1F1F1] flex flex-col items-center py-8 px-2 relative overflow-hidden">
 			{/* Background Splash */}
@@ -89,30 +94,45 @@ const SearchPage = () => {
 					</h1>
 				</header>
 				<div className="flex flex-col gap-4">
-					<LocationInput
-						label="From"
-						value={fromLocation}
-						onFocus={() => setFocused("from")}
-						onChange={(e) => setFromLocation(e.target.value)}
-						isActive={focused === "from"}
-					/>
+					<motion.div whileFocus={{ scale: 1.04, boxShadow: '0 0 0 2px #c0ec4e' }} whileHover={{ scale: 1.02 }}>
+						<LocationInput
+							label="From"
+							value={fromLocation}
+							onFocus={() => setFocused("from")}
+							onChange={(e) => setFromLocation(e.target.value)}
+							isActive={focused === "from"}
+						/>
+					</motion.div>
 					<div className="flex justify-center -my-2">
-						<button
+						<motion.button
+							whileHover={{ scale: 1.15, rotate: 12 }}
+							whileTap={{ scale: 0.95 }}
 							className="flex items-center justify-center w-10 h-10 bg-[#907EFF] text-white rounded-full shadow hover:bg-[#7a6ad6] transition"
 							onClick={handleSwap}
 							title="Swap From and To"
 							type="button"
 						>
 							<MdSwapVert className="text-2xl" />
-						</button>
+						</motion.button>
 					</div>
-					<LocationInput
-						label="To"
-						value={toLocation}
-						onFocus={() => setFocused("to")}
-						onChange={(e) => setToLocation(e.target.value)}
-						isActive={focused === "to"}
-					/>
+					<motion.div whileFocus={{ scale: 1.04, boxShadow: '0 0 0 2px #c0ec4e' }} whileHover={{ scale: 1.02 }}>
+						<LocationInput
+							label="To"
+							value={toLocation}
+							onFocus={() => setFocused("to")}
+							onChange={(e) => setToLocation(e.target.value)}
+							isActive={focused === "to"}
+						/>
+					</motion.div>
+					<motion.button
+						whileHover={{ scale: 1.07, boxShadow: '0px 8px 24px rgba(192,236,78,0.2)' }}
+						whileTap={{ scale: 0.96 }}
+						className="w-full py-3 bg-[#907EFF] text-white rounded-xl font-semibold text-lg shadow hover:bg-[#7a6ad6] transition"
+						onClick={handleBookRide}
+						type="button"
+					>
+						Book Your Ride
+					</motion.button>
 					<button
 						className="flex items-center gap-2 justify-center w-full py-3 mt-2 bg-[#907EFF] text-white rounded-xl font-semibold text-lg shadow hover:bg-[#7a6ad6] transition"
 						onClick={() => setIsModalOpen(true)}

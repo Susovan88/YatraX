@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -59,7 +60,12 @@ const HomePage = () => {
         </div>
 
         {/* Input Section */}
-        <div className="w-full max-w-md bg-white/90 rounded-2xl shadow p-4 mb-4">
+        <motion.div
+          className="w-full max-w-md bg-white/90 rounded-2xl shadow p-4 mb-4"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
           <div className="flex items-center mb-4">
             <div className="flex flex-col items-center mr-4">
               <span className="w-5 h-5 bg-purple-400 rounded-full mb-1"></span>
@@ -69,37 +75,65 @@ const HomePage = () => {
             <div className="flex-1">
               <div className="mb-2">
                 <label className="block text-gray-500 text-sm">From</label>
-                <input
+                <motion.input
                   className="w-full border-b border-gray-300 focus:outline-none focus:border-purple-400 text-gray-800 bg-transparent"
                   defaultValue="Garia Station Road, Chhoto..."
                   aria-label="From"
+                  whileFocus={{
+                    scale: 1.04,
+                    boxShadow: "0 0 0 2px #c0ec4e",
+                  }}
+                  whileHover={{ scale: 1.02 }}
+                  as={motion.input}
                 />
               </div>
               <div className="mb-2 flex items-center">
                 <div className="flex-1 h-px bg-gray-200"></div>
-                <button className="ml-2 bg-purple-400 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-purple-500 transition">
+                <motion.button
+                  whileHover={{ scale: 1.15, rotate: 12 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="ml-2 bg-purple-400 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-purple-500 transition"
+                >
                   +
-                </button>
+                </motion.button>
               </div>
               <div>
                 <label className="block text-gray-500 text-sm">To</label>
-                <input
+                <motion.input
                   className="w-full border-b border-gray-300 focus:outline-none focus:border-purple-400 text-gray-800 bg-transparent"
                   defaultValue="Howrah Railway Station, M..."
                   aria-label="To"
+                  whileFocus={{
+                    scale: 1.04,
+                    boxShadow: "0 0 0 2px #c0ec4e",
+                  }}
+                  whileHover={{ scale: 1.02 }}
+                  as={motion.input}
                 />
               </div>
             </div>
           </div>
           <div className="flex gap-2">
-            <button className="flex-1 bg-purple-600 text-white py-2 rounded-lg font-bold hover:bg-purple-700 transition shadow">
+            <motion.button
+              whileHover={{
+                scale: 1.07,
+                boxShadow: "0px 8px 24px rgba(192,236,78,0.2)",
+              }}
+              whileTap={{ scale: 0.96 }}
+              className="flex-1 bg-purple-600 text-white py-2 rounded-lg font-bold hover:bg-purple-700 transition shadow"
+              onClick={() => navigate("/search")}
+            >
               Search Ride
-            </button>
-            <button className="w-16 h-10 bg-lime-100 text-purple-700 rounded-lg hover:bg-lime-200 transition shadow">
+            </motion.button>
+            <motion.button
+              whileHover={{ scale: 1.07 }}
+              whileTap={{ scale: 0.96 }}
+              className="w-16 h-10 bg-lime-100 text-purple-700 rounded-lg hover:bg-lime-200 transition shadow"
+            >
               Later
-            </button>
+            </motion.button>
           </div>
-        </div>
+        </motion.div>
 
         {/* Shortcuts */}
         <div className="w-full max-w-md bg-gradient-to-r from-purple-100 via-white to-lime-100 rounded-2xl p-4 mb-4 shadow">
