@@ -4,6 +4,7 @@ import Welcome from './Components/Welcome';
 import HomePage from './Components/HomePage';
 import SignUp from './Components/SignUpPage';
 import SearchPage from './pages/SearchPage/SearchPage';
+import PaymentsPage from './pages/PaymentPage/PaymentsPage';
 import './App.css';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route path='/signup' element={<SignUp/>}/>
         <Route path='/home' element={<HomePage/>}/>
         <Route path='/search' element={<SearchPage/>}/>
+        <Route path='/payments' element={<PaymentsPage />} />
         {/* Add more routes as needed */}
       </Routes>
     </Router>
