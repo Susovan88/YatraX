@@ -8,6 +8,8 @@ import PaymentsPage from './pages/PaymentPage/PaymentsPage';
 import PaymentConfirm from './pages/PaymentConfirmationPage/PaymentConfirmationPage';
 import Ticket from './pages/TicketsPage/TicketsPage'
 import UserRoute from './pages/USerRoutes/UserRoutePage';
+import Profile from './pages/Profile/ProfilePage';
+import LoginPage from './Components/LoginPage';
 import './App.css';
 
 function App() {
@@ -16,6 +18,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Welcome />} />
         <Route path='/signup' element={<SignUp/>}/>
+        <Route path='/login' element={<LoginPage/>}/>
+        <Route path='/profile' element={<Profile/>}/>
         <Route path='/home' element={<HomePage/>}/>
         <Route path='/search' element={<SearchPage/>}/>
         <Route path='/payments' element={<PaymentsPage />} />
