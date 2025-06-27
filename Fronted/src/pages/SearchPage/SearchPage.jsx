@@ -4,7 +4,6 @@ import { MdSwapVert } from "react-icons/md";
 import LocationInput from "./LocationInput";
 import AddLocationModal from "./AddLocationModal";
 import LocationList from "./LocationList";
-
 const DEFAULT_LOCATIONS = [
 	{
 		city: "Central Park",
