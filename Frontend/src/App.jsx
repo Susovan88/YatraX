@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Welcome from './Components/Welcome';
 import HomePage from './Components/HomePage';
 import SignUp from './Components/SignUpPage';
@@ -14,6 +14,10 @@ import Navbar from './Components/Navbar';
 import './App.css';
 
 function App() {
+  const location = useLocation();
+  const hideNavbarPaths = ['/', '/signup', '/login'];
+  const shouldShowNavbar = !hideNavbarPaths.includes(location.pathname);
+
   return (
      <div >
       <Routes>
@@ -29,7 +33,7 @@ function App() {
         <Route path='/user-route' element={<UserRoute/>}/>
         {/* Add more routes as needed */}
       </Routes>
-      <Navbar />
+      {shouldShowNavbar && <Navbar />}
     </div>
   );
 }

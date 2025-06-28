@@ -14,7 +14,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="fixed bottom-2 left-1/2 -translate-x-1/2 z-50 bg-[#030318] rounded-[18px] px-3 py-2 flex items-center gap-5 shadow-lg">
+    <div className="fixed bottom-2 left-1/2 -translate-x-1/2 z-50 bg-[#030318] rounded-[18px] px-2 py-2 flex items-center gap-5 shadow-lg">
       {navItems.map((item) => (
         <NavLink
           key={item.to}
