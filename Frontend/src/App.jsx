@@ -15,7 +15,7 @@ import './App.css';
 
 function App() {
   const location = useLocation();
-  const hideNavbarPaths = ['/', '/signup', '/login'];
+  const hideNavbarPaths = ['/', '/signup', '/login', '/payments', '/payment-confirm', '/search-page'];
   const shouldShowNavbar = !hideNavbarPaths.includes(location.pathname);
 
   return (
@@ -31,6 +31,7 @@ function App() {
         <Route path='/payment-confirm' element={<PaymentConfirm />} />
         <Route path='/ticket' element={<Ticket/>}/>
         <Route path='/user-route' element={<UserRoute/>}/>
+        <Route path='/search-page' element={<SearchPage/>}/>
         {/* Add more routes as needed */}
       </Routes>
       {shouldShowNavbar && <Navbar />}

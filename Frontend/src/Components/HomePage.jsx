@@ -173,7 +173,7 @@ const HomePage = () => {
               <span className="text-xl font-bold">Bus</span>
               <span className="text-[14px] mb-2">Easy & Economic</span>
               <img
-                src="https://image-resource.creatie.ai/157237976852160/157237976852162/282f15b4d8058628a0e4c1c8d5d48499.png"
+                src="./src/assets/imgs/bus.webp"
                 alt="Bus"
                 className="w-18 h-16 object-cover"
               />
@@ -182,7 +182,7 @@ const HomePage = () => {
               <span className="text-xl font-bold">Taxi</span>
               <span className="text-[14px] mb-2">Comfortable</span>
               <img
-                src="https://image-resource.creatie.ai/157237976852160/157237976852162/590692f3885c81bf562c9f65e6fde969.png"
+                src="./src/assets/imgs/taxi.webp"
                 alt="Taxi"
                 className="w-18 h-16 object-cover"
               />

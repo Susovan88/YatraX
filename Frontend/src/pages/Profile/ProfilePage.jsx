@@ -51,20 +51,20 @@ const ProfilePage = () => {
         }}
       />
       {/* Header and Back Button */}
-      <div className="absolute left-4 top-4 z-20 flex flex-col items-start sm:static sm:flex-row sm:items-center sm:gap-3 w-auto">
-        <button
+      <div className="absolute left-4 top-4 z-20 flex flex-col items-start mb-4 sm:static sm:flex-row sm:items-center sm:gap-3 w-auto">
+        {/* <button
           onClick={() => navigate(-1)}
           className="bg-[#907EFF] text-white rounded-lg p-2 font-semibold hover:bg-[#7a6ad6] transition flex items-center justify-center mb-2 sm:mb-0"
           aria-label="Back"
           style={{ boxShadow: '0 2px 8px #907EFF33' }}
         >
           <FaArrowLeft className="text-lg" />
-        </button>
-        <h1 className="text-3xl font-bold text-purple-700 drop-shadow text-left ml-0 sm:ml-2">
+        </button> */}
+        <h1 className="text-3xl font-bold text-[4c4c57] drop-shadow text-left ml-0 sm:ml-2">
           YatraX
         </h1>
       </div>
-      <div className="w-full max-w-md mx-auto px-4 py-8 bg-white rounded-2xl shadow-lg z-10 relative mt-6 pt-20 sm:pt-0">
+      <div className="w-full max-w-md mx-auto px-4 py-8 bg-white rounded-2xl shadow-lg z-10 relative mt-10 pt-20 sm:pt-0">
         {/* Profile Photo and Name */}
         <div className="flex flex-col items-center gap-4 mb-6">
           <img

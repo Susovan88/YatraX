@@ -50,22 +50,17 @@ const UserRoutesPage = () => {
         }}
       />
       {/* Back Button absolutely positioned at the top over the background */}
-      <button
+      {/* <button
         onClick={() => navigate(-1)}
         className="bg-[#907EFF] text-white rounded-lg p-2 font-semibold hover:bg-[#7a6ad6] transition flex items-center justify-center absolute left-4 top-4 z-20"
         aria-label="Back"
         style={{ boxShadow: "0 2px 8px #907EFF33" }}
       >
         <FaArrowLeft className="text-lg" />
-      </button>
+      </button> */}
       <div className="w-full max-w-md mx-auto bg-white p-4 rounded-xl shadow-md mt-6 z-10 relative">
         {/* YatraX Header Row */}
-        <div className="flex items-center gap-3 mb-4">
-          <h1 className="text-3xl font-bold text-purple-700 drop-shadow text-left ml-2">
-            YatraX
-          </h1>
-        </div>
-        <h2 className="text-2xl font-extrabold text-[#4C4C57] mb-8 text-center">
+        <h2 className="text-4xl font-bold text-[#4c4c57] mb-8 text-center">
           Your Route
         </h2>
         <div className="relative flex flex-col gap-y-8 pl-2 pb-24 mb-12">

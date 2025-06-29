@@ -4,25 +4,27 @@ import { FaArrowLeft } from "react-icons/fa";
 import LocationInput from "../SearchPage/LocationInput";
 import PassengerCounter from "./PassengerCounter";
 import UPIOptions from "./UPIOptions";
+
 import CardOption from "./CardOption";
 import { motion } from "framer-motion";
+
 
 const upiOptions = [
   {
     key: "gpay",
     label: "Google Pay",
-    img: "https://image-resource.creatie.ai/157237976852160/157237976852162/8c7375a1d63e44734fb2466880cd96a5.png",
+    img: "./src/assets/imgs/gpay.png",
     tag: "Best Value",
   },
   {
     key: "phonepe",
     label: "PhonePe",
-    img: "https://image-resource.creatie.ai/157237976852160/157237976852162/704652f99e7f24ed17782bd795c0be05.png",
+    img: "./src/assets/imgs/phonepe.png",
   },
   {
     key: "bhim",
     label: "BHIM",
-    img: "https://image-resource.creatie.ai/157237976852160/157237976852162/2ea4b73c7124e12199c3c7eb5744f553.png",
+    img: "./src/assets/imgs/bhim.png",
   },
   // Add more UPI options here if needed
 ];
@@ -74,11 +76,6 @@ const PaymentsPage = () => {
         <FaArrowLeft className="text-lg" />
       </button>
       <div className="w-full max-w-md mx-auto bg-white p-4 rounded-xl shadow-md mt-6 z-10 relative">
-        <div className="flex items-center gap-3 mb-4">
-          <h1 className="text-3xl font-bold text-purple-700 drop-shadow text-left ml-2">
-            YatraX
-          </h1>
-        </div>
         <h2 className="text-xl font-bold text-gray-800 flex-1 text-center mb-6">
           Payment Options
         </h2>
@@ -146,7 +143,10 @@ const PaymentsPage = () => {
         {/* Divider */}
         <hr className="my-4 border-t" />
         {/* Pay Button */}
-        <button className="w-full py-3 bg-[#907EFF] text-white rounded-xl font-semibold text-lg shadow hover:bg-[#7a6ad6] transition">
+        <button 
+          onClick={() => navigate('/payment-confirm')}
+          className="w-full py-3 bg-[#907EFF] text-white rounded-xl font-semibold text-lg shadow hover:bg-[#7a6ad6] transition"
+        >
           Tap to Pay
         </button>
       </div>

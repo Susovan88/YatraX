@@ -17,7 +17,7 @@ const Welcome = () => {
       />
       {/* Bottom Card */}
       <div className="absolute bottom-0 left-0 w-full h-[260px] rounded-t-[32px] flex flex-col justify-start items-start p-[32px] bg-[#030318] sm:relative sm:w-full sm:rounded-t-[20px] sm:p-[16px_4vw] sm:h-auto z-20 transition-all duration-300">
-        <div className="flex flex-row flex-wrap gap-x-[220px] gap-y-[32px] w-full h-auto justify-start items-center sm:flex-col sm:w-full sm:gap-x-0 sm:gap-y-6">
+        <div className="flex flex-row flex-wrap gap-x-[180px] gap-y-[32px] w-full h-auto justify-start items-center sm:flex-col sm:w-full sm:gap-x-0 sm:gap-y-6">
           {/* Tagline */}
           <div className="flex flex-col justify-start items-start gap-2 w-full h-auto sm:w-full sm:items-center sm:text-center">
             <div className="text-white font-bold text-2xl leading-[33px] w-[280px] h-[33px] sm:w-full sm:text-[20px] sm:leading-7">

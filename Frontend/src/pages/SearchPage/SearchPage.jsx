@@ -35,10 +35,12 @@ const SearchPage = () => {
 	const [city, setCity] = useState("");
 	const [desc, setDesc] = useState("");
 	const [focused, setFocused] = useState("from");
+	const [isRotated, setIsRotated] = useState(false);
 
 	const handleSwap = () => {
 		setFromLocation(toLocation);
 		setToLocation(fromLocation);
+		setIsRotated(!isRotated);
 	};
 
 	const handleAddLocation = () => {
@@ -83,17 +85,13 @@ const SearchPage = () => {
 				<FaArrowLeft className="text-lg" />
 			</button>
 			<div className="w-full max-w-md bg-white rounded-2xl shadow-lg p-6 flex flex-col gap-6 z-10 relative mt-6">
-				<div className="flex items-center gap-3 mb-4">
-					<h1 className="text-3xl font-bold text-purple-700 drop-shadow text-left ml-2">
-						YatraX
-					</h1>
-				</div>
+				
 				<header>
 					<h1 className="text-2xl font-bold text-gray-800 text-center mb-4">
 						Select Your Destination
 					</h1>
 				</header>
-				<div className="flex flex-col gap-4">
+				<div className="flex flex-col gap-[] items-end">
 					<motion.div whileFocus={{ scale: 1.04, boxShadow: '0 0 0 2px #c0ec4e' }} whileHover={{ scale: 1.02 }}>
 						<LocationInput
 							label="From"
@@ -103,10 +101,12 @@ const SearchPage = () => {
 							isActive={focused === "from"}
 						/>
 					</motion.div>
-					<div className="flex justify-center -my-2">
+					<div className="flex justify-center -my-2 mr-4 z-10">
 						<motion.button
-							whileHover={{ scale: 1.15, rotate: 12 }}
+							whileHover={{ scale: 1.05 }}
 							whileTap={{ scale: 0.95 }}
+							animate={{ rotate: isRotated ? 180 : 0 }}
+							transition={{ duration: 0.2 }}
 							className="flex items-center justify-center w-10 h-10 bg-[#907EFF] text-white rounded-full shadow hover:bg-[#7a6ad6] transition"
 							onClick={handleSwap}
 							title="Swap From and To"
@@ -124,8 +124,11 @@ const SearchPage = () => {
 							isActive={focused === "to"}
 						/>
 					</motion.div>
+				</div>
+				{/* All Locations as selectable options */}
+				<div>
 					<motion.button
-						whileHover={{ scale: 1.07, boxShadow: '0px 8px 24px rgba(192,236,78,0.2)' }}
+						whileHover={{ scale: 1.0, boxShadow: '0px 8px 24px rgba(192,236,78,0.2)' }}
 						whileTap={{ scale: 0.96 }}
 						className="w-full py-3 bg-[#907EFF] text-white rounded-xl font-semibold text-lg shadow hover:bg-[#7a6ad6] transition"
 						onClick={handleBookRide}
@@ -141,7 +144,7 @@ const SearchPage = () => {
 						<FaPlus className="text-base" /> Add Location
 					</button>
 				</div>
-				{/* All Locations as selectable options */}
+					
 				<div className="mt-6">
 					<h2 className="text-lg font-semibold text-gray-700 mb-2">
 						All Locations
